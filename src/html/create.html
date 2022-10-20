@@ -4,71 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="In hac habitasse platea dictumst." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/eeb1df6846.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Document</title>
+    <title>Awesome profile-cards</title>
 </head>
 
 <body>
-    <header>
-
-    </header>
+    <include src="./partials/header.html"></include>
     <main>
-
-        <section>
-            <p>
-                Reset
-            </p>
-            <article>
-                <h2>Nombre apellido</h2>
-                <h3>Front-end developer</h3>
-                <img src="" alt="">
-                <ul>
-                    <li><a href=""><i class="fa-solid fa-mobile-screen-button"></i></a></li>
-                    <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-github-alt"></i></a></li>
-                </ul>
-            </article>
-        </section>
-
+        <include src="./partials/preview-tarjeta.html"></include>
         <form action="">
-            <fieldset>
-                <legend><i class="fa-regular fa-object-ungroup"></i>Diseña</legend>
-                <label for=""><input type="radio" name="" id=""></label>
-                <label for=""><input type="radio" name="" id=""></label>
-                <label for=""><input type="radio" name="" id=""></label>
-            </fieldset>
-            <fieldset>
-                <legend><i class="fa-regular fa-keyboard"></i>Rellena</legend>
-                <label for="name">Nombre completo<input type="text" name="name" id="name"
-                        placeholder="Ej: Sally Jill"></label>
-                <label for="job-position">Puesto<input type="text" name="job-position" id="job-position"
-                        placeholder="Ej: Front-end unicorn"></label>
-                <label for="">Imagen de perfil<input type="text" name="" id="" placeholder=""></label>
-                <label for="emailaddress">Email<input type="email" name="emailaddress" id="emailaddress"
-                        placeholder="Ej: sally.hill@gmail.com"></label>
-                <label for="telephone">Teléfono<input type="tel" name="telephone" id="telephone"
-                        placeholder="Ej: 555-55-55-55"></label>
-                <label for="linkedin">Linkedin<input type="text" name="linkedin" id="linkedin"
-                        placeholder="Ej: linkedin.com/in/sally-hill"></label>
-                <label for="github">Github<input type="text" name="github" id="github"
-                        placeholder="Ej: @sally-hill"></label>
-            </fieldset>
-            <fieldset>
-                <legend> <i class="fa-solid fa-share-nodes"></i>Comparte</legend>
-                <label for=""><input type="submit" name="" id="" value="Crear tarjeta"></label>
-            </fieldset>
+            <include src="./partials/form-diseña.html"></include>
+            <include src="./partials/form-rellena.html"></include>
+            <include src="./partials/form-comparte.html"></include>
         </form>
         <div>
             <h3>La tarjeta ha sido creada:</h3>
             <label for=""><i class="fa-brands fa-twitter"></i><input type="submit" name="" id=""
                     value="Compartir en twitter"></label>
-
         </div>
     </main>
-    <footer></footer>
+    <include src="./partials/footer.html"></include>
 </body>
 
 </html>

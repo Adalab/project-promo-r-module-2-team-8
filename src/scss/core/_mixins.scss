@@ -1,0 +1,24 @@
+@mixin form-title {
+    font-size: rem(18);
+    color: $color_gunMetal;
+    font-family: $font-Open;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+@mixin form-label {
+    color: $color-darkGreen;
+    font-family: $font-Open;
+    font-size: rem(14);
+    line-height: 1.43;
+}
+@mixin form-placeholder {
+    color: $color-placeHolder;
+    font-family: $font-Open;
+    font-size: rem(14);
+    line-height: 1.43;
+}
+@mixin icons {
+    color: $color-orange; 
+    /*width: 60px;
+    height: 48.8px;*/
+}

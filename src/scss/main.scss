@@ -1,11 +1,16 @@
-/*@import 'core/variables';
+/*
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'pages/index';
+
 */
+
 @import 'core/reset';
 @import 'core/responsive';
+@import 'core/mixins';
+@import 'core/funciones';
+@import 'core/variables';
+@import 'pages/index';
 
