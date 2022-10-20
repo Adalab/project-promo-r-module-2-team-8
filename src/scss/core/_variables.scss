@@ -1,9 +1,20 @@
-/*font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;*/
+
+
 // fonts
-$font-main: 'Roboto', sans-serif;
+$font-Merri: 'Merriweather', serif;
+$font-Open: 'Open Sans', sans-serif;
+$font-Mont: 'Montserrat', sans-serif;
+
 
 // colors
-$color-bg: #f3f4f5;
-$color-secondary: #999;
+$color-darkGreen: #114e4e; // color principal dentro de los imput
+$color-orange: #e17334; // H1 e iconos de diseña, rellena y comparte
+$color-start: #438792; // botón de comenzar
+$color_gunMetal: #54585a; // color principal títulos de input
+$color_footer: #6b6b6b; // letra del footer
+$color-input: #a2deaf; // contenedores 
+$color-placeHolder: #c5c5c5; // color letra placeholder
+$color-lineFormulary: #d8d8d8; // La línea que aparece en el formulario
+$color-whiteGround: #f5f5f5;
+
+

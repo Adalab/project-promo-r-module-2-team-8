@@ -1,10 +1,10 @@
-/*@import 'core/variables';
+/*
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'pages/index';
+
 */
 * {
   box-sizing: border-box;
@@ -53,5 +53,12 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
