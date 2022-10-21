@@ -1,0 +1,67 @@
+//Landing
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-whiteGround;
+    &__img {
+        width: rem(250);
+        height: rem(63);
+        margin-top: rem(130);
+        margin-bottom: rem(40);
+    }
+    &__title{
+        color:$color-orange;
+        font-family: $font-Merri;
+        font-weight: 900;
+        font-size: rem(20);
+        margin-bottom: rem(-10);
+    }
+    &__text {
+        color:$color-darkGreen;
+        font-family: $font-Open;
+        font-size: rem(12.8);
+        white-space: pre-line;
+        margin-bottom: rem(20);
+        text-align: center;        
+    }  
+    &__list{
+        display:flex;  
+        border: solid rem(1.6) #f2e1d9;
+        border-radius: rem(4);
+        gap: rem(30);  
+        padding: rem(18) rem(20) rem(12.8) rem(20); 
+        margin-top: rem(36);
+        margin-bottom: rem(65);  
+    
+        &--item {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           color: $color_gunMetal; 
+           text-align: center;  
+           min-width:25%;                 
+        }    
+        &--icon {
+            @include icons;        
+            transform: scale(1.5);
+        }    
+    }  
+    &__button {
+        font-family: $font-Open;
+        font-weight: 600;
+        color: white;
+        font-size: rem(16);
+        background-color: $color-start;
+        padding: rem(10) rem(20);
+        border-radius: rem(21);
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: rem(50);
+    }    
+}
+

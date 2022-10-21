@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        font-size: rem(14);
+        font-family: $font-Open;
+        color: $color_footer;
+        opacity: 0.5;
+        margin-top: rem(18);
+        margin-bottom: rem(18);
+    }
+    &__box{
+        padding: rem(5);
+        &--logo{
+        width: rem(103);
+        height: rem(40);
+    }
+}
+}

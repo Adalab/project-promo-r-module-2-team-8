@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="In hac habitasse platea dictumst." />
   <title>Awesome profile-cards</title>
   <script src="https://kit.fontawesome.com/eeb1df6846.js" crossorigin="anonymous"></script>
   <link
@@ -15,31 +17,31 @@
 <body>
 
   <main class="main">
-    <img src="./assets/images/logo-awesome.svg" alt="Logo principal">
+    <img src="./assets/images/logo-awesome.svg" alt="Logo principal" class="main__img">
     <h1 class="main__title">
-      Crea tu tarjeta de visita
+        Crea tu tarjeta de visita
     </h1>
     <p class="main__text">
-      Crea mejores contactos profesionales de forma fácil y cómoda
+        Crea mejores contactos profesionales de &NewLine;forma fácil y cómoda
     </p>
-    <div class="main__container">
-      <ul class="main__list">
+
+    <ul class="main__list">
         <li class="main__list--item">
-          <i class="fa-regular fa-object-ungroup"></i> Diseña
+            <i class="fa-regular fa-object-ungroup main__list--icon"></i> Diseña
         </li>
         <li class="main__list--item">
-          <i class="fa-regular fa-keyboard"></i> Rellena
+            <i class="fa-regular fa-keyboard main__list--icon"></i> Rellena
         </li>
         <li class="main__list--item">
-          <i class="fa-solid fa-share-nodes"></i> Comparte
+            <i class="fa-solid fa-share-nodes main__list--icon"></i> Comparte
         </li>
-      </ul>
-    </div>
+    </ul>
+
     <a href="./create.html" class="main__button">Comenzar</a>
   </main>
   <footer class="footer">
       <p class="footer__text">Awesome profile-cards @2022</p>
-      <img src="./assets/images/logo-adalab.png" alt="Adalab" class="footer__logo">
+      <div class="footer__box"><img src="./assets/images/logo-adalab.png" alt="Adalab" class="footer__box--logo"></div>
   </footer>
   <script src="./assets/js/main.js"></script>
 

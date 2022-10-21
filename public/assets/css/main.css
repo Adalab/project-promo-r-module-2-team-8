@@ -9,7 +9,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -59,6 +60,75 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5; }
+  .main__img {
+    width: 15.625rem;
+    height: 3.9375rem;
+    margin-top: 8.125rem;
+    margin-bottom: 2.5rem; }
+  .main__title {
+    color: #e17334;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-bottom: -0.625rem; }
+  .main__text {
+    color: #114e4e;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    white-space: pre-line;
+    margin-bottom: 1.25rem;
+    text-align: center; }
+  .main__list {
+    display: flex;
+    border: solid 0.1rem #f2e1d9;
+    border-radius: 0.25rem;
+    gap: 1.875rem;
+    padding: 1.125rem 1.25rem 0.8rem 1.25rem;
+    margin-top: 2.25rem;
+    margin-bottom: 4.0625rem; }
+    .main__list--item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #54585a;
+      text-align: center;
+      min-width: 25%; }
+    .main__list--icon {
+      color: #e17334;
+      width: 2rem;
+      height: 1.625rem;
+      transform: scale(1.5); }
+  .main__button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+    background-color: #438792;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.3125rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 3.125rem; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center; }
+  .footer__text {
+    font-size: 0.875rem;
+    font-family: "Open Sans", sans-serif;
+    color: #6b6b6b;
+    opacity: 0.5;
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem; }
+  .footer__box {
+    padding: 0.3125rem; }
+    .footer__box--logo {
+      width: 6.4375rem;
+      height: 2.5rem; }
 
 /*# sourceMappingURL=main.css.map */
