@@ -1,3 +1,13 @@
 .header {
-    background-color:white;
+    background-color:white;  //header y footer no hemos puesto width, cómo afecta?
+    display: flex;
+    padding-left: rem(40);
+    padding-top: rem(31);
+    padding-bottom: rem(30);   //LO HARÍAIS CON margin?
+    
+   
+    &__logo{
+        width: rem(200);
+        height: rem(50);
+    }
 }

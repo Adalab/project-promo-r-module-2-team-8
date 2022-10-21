@@ -2,7 +2,7 @@
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
-@import 'layout/header';
+
 @import 'layout/footer';
 
 */
@@ -113,11 +113,114 @@ table {
     text-transform: uppercase;
     margin-bottom: 3.125rem; }
 
+.header {
+  background-color: white;
+  display: flex;
+  padding-left: 2.5rem;
+  padding-top: 1.9375rem;
+  padding-bottom: 1.875rem; }
+  .header__logo {
+    width: 12.5rem;
+    height: 3.125rem; }
+
+.header {
+  background-color: white;
+  display: flex;
+  padding-left: 2.5rem;
+  padding-top: 1.9375rem;
+  padding-bottom: 1.875rem; }
+  .header__logo {
+    width: 12.5rem;
+    height: 3.125rem; }
+
+.desing {
+  background-color: red;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: row; }
+  .desing__legend {
+    font-size: 1.125rem;
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .desing__legend--icon {
+      color: #e17334;
+      width: 2rem;
+      height: 1.625rem; }
+  .desing__color {
+    color: #114e4e;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    text-transform: uppercase; }
+  .desing__radio {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end; }
+
+.fill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.875rem;
+  margin-top: 1.875rem;
+  padding-left: 1.25rem; }
+  .fill__legend {
+    font-size: 1.125rem;
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .fill__legend--icon {
+      color: #e17334;
+      width: 2rem;
+      height: 1.625rem; }
+  .fill__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .fill__label__text--name, .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
+      color: #114e4e;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      margin-bottom: 0.4375rem;
+      margin-top: 0.4375rem; }
+  .fill__input {
+    color: #c5c5c5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    width: 95%; }
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 1.125rem;
+  padding-bottom: 1.25rem; }
+  .footer__text {
+    font-size: 0.875rem;
+    font-family: "Open Sans", sans-serif;
+    color: #6b6b6b;
+    opacity: 0.5;
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem; }
+  .footer__box {
+    padding: 0.3125rem; }
+    .footer__box--logo {
+      width: 6.4375rem;
+      height: 2.5rem; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.125rem;
+  padding-bottom: 1.25rem; }
   .footer__text {
     font-size: 0.875rem;
     font-family: "Open Sans", sans-serif;

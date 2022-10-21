@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: rem(18);
+    padding-bottom: rem(20);
     &__text {
         font-size: rem(14);
         font-family: $font-Open;

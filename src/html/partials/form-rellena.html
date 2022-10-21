@@ -1,16 +1,25 @@
-<fieldset>
-        <legend class="form__legend"><i class="fa-regular fa-keyboard form__icon"></i>Rellena</legend>
-        <label for="name">Nombre completo<input type="text" name="name" id="name" placeholder="Ej: Sally Jill"></label>
-        <label for="job-position">Puesto<input type="text" name="job-position" id="job-position"
-                        placeholder="Ej: Front-end unicorn"></label>
-        <label for="">Imagen de perfil"
+<fieldset class="fill">
+        <legend class="fill__legend"><i class="fa-regular fa-keyboard fill__legend--icon"></i>Rellena</legend>
+
+        <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name"> Nombre completo</span>
+                <input class="fill__input fill__input--name" type="text" name="name" id="name" placeholder="Ej: Sally Jill">
+        </label>
+
+        <label for="job-position" class="fill__label fill__label--jobposition"><span class="fill__label__text--jobposition">Puesto</span>
+                <input class="fill__input fill__input--jobposition" type="text" name="job-position" id="job-position"placeholder="Ej: Front-end unicorn">
+        </label>
+        <label for="profile-imagen"class="fill__label fill__label--profileimage"><span class="fill__label__text--profileimage">Imagen de perfil</span>
                 <div></div>
         </label>
-        <label for="emailaddress">Email<input type="email" name="emailaddress" id="emailaddress"
-                        placeholder="Ej: sally.hill@gmail.com"></label>
-        <label for="telephone">Teléfono<input type="tel" name="telephone" id="telephone"
-                        placeholder="Ej: 555-55-55-55"></label>
-        <label for="linkedin">Linkedin<input type="text" name="linkedin" id="linkedin"
-                        placeholder="Ej: linkedin.com/in/sally-hill"></label>
-        <label for="github">Github<input type="text" name="github" id="github" placeholder="Ej: @sally-hill"></label>
+        <label for="emailaddress" class="fill__label fill__label--email"><span class="fill__label__text--email">Email</span>
+                <input class="fill__input fill__input--email" type="email" name="emailaddress" id="emailaddress"placeholder="Ej: sally.hill@gmail.com">
+        </label>
+        <label for="telephone"class="fill__label fill__input--telefono" type="tel" name="telephone" id="telephone" placeholder="Ej: 555-55-55-55">
+        </label>
+        <label for="linkedin"class="fill__label fill__label--linkedin"><span class="fill__label__text--linkedin">Linkedin</span>
+                <input class="fill__input fill__input--linkedin" type="text" name="linkedin" id="linkedin"placeholder="Ej: linkedin.com/in/sally-hill">
+        </label>
+        <label for="github" class="fill__label fill__label--github"><span class="fill__label__text--github">Github</span>
+                <input class="fill__input fill__input--github"type="text" name="github" id="github" placeholder="Ej: @sally-hill">
+        </label>
 </fieldset>
