@@ -47,8 +47,7 @@
            min-width:25%;                 
         }    
         &--icon {
-            @include icons;        
-            transform: scale(1.5);
+            @include icons;            
         }    
     }  
     &__button {

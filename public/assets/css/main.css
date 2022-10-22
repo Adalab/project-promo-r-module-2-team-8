@@ -99,8 +99,8 @@ table {
     .main__list--icon {
       color: #e17334;
       width: 2rem;
-      height: 1.625rem;
-      transform: scale(1.5); }
+      height: 1.75rem;
+      font-size: 24px; }
   .main__button {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -147,7 +147,8 @@ table {
     .desing__legend--icon {
       color: #e17334;
       width: 2rem;
-      height: 1.625rem; }
+      height: 1.75rem;
+      font-size: 24px; }
   .desing__color {
     color: #114e4e;
     font-family: "Open Sans", sans-serif;
@@ -156,8 +157,7 @@ table {
     text-transform: uppercase; }
   .desing__radio {
     display: flex;
-    flex-direction: column;
-    justify-items: flex-end; }
+    flex-direction: column; }
 
 .fill {
   width: 100%;
@@ -175,7 +175,8 @@ table {
     .fill__legend--icon {
       color: #e17334;
       width: 2rem;
-      height: 1.625rem; }
+      height: 1.75rem;
+      font-size: 24px; }
   .fill__label {
     display: flex;
     flex-direction: column;
