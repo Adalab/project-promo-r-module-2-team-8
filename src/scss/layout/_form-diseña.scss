@@ -1,0 +1,23 @@
+.design {
+    background-color: red;
+    padding-left: rem(20);
+    display: flex;
+    flex-direction: row;
+    
+    &__legend{
+        @include form-title;
+        &--icon{
+        @include icons;
+        }          
+    }
+    &__color {
+        @include form-label;
+        text-transform: uppercase;
+        //separar colores de diseña   
+    }
+    &__radio {
+        display: flex;
+        flex-direction: column;        
+    }
+
+}
