@@ -4,7 +4,10 @@
     flex-direction: column;
     justify-content: center;    
     padding-top: 10%;
+
     &__button{
+        font-family: $font-Open;
+        font-size:rem(12) ;
         max-width: rem(80);
         padding-top: rem(6);
         padding-bottom: rem(6);
@@ -13,9 +16,9 @@
         background: transparent;
         margin-left: 15% ;
         text-transform: uppercase;
-        color: $color_gunMetal;
+        color: $color_gunMetal;                
         &--can {
-            padding-right: 5px;
+            padding-right: 5px;           
         }        
     }
     &__container {
@@ -24,28 +27,30 @@
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        margin: 10% 10% 10% 15%;   
+        margin: 7% 10% 10% 15%;   
     }
     &__name {
         font-family: $font-Mont;
+        font-weight: bold;
         color: $color-darkGreen;
         font-size: rem(18);        
         border-left: solid $color-start rem(5);
         padding-left: 5%;
-        margin-top: 5%;    
+        padding-bottom: 3%;
+        margin-top: 5%;          
     }
-
     &__job {
         font-family: $font-Mont;
         color: $color_gunMetal;        
         border-left: solid $color-start rem(5);
         padding-left: 5%;
-        padding-bottom: 10%;
+        padding-bottom: 2%;
+        margin-bottom: 3%;
     }    
     &__img {
         text-align: center;
         &--file{
-            width: rem(240); 
+            width: 100%; 
          }        
     }
     &__icons{
@@ -53,13 +58,14 @@
         flex-direction: row;
         justify-content: center;
         text-align: center;
-        gap: rem(20);
+        gap: rem(30);
+        margin: 4% 0 4% 0;
         &--color {
+            color: $color-darkGreen;
             border: solid 2px $color-input;
             border-radius: 80%;
             padding: 25%;
            
-        }
-       
+        }       
     }
 }

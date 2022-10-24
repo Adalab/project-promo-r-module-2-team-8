@@ -130,6 +130,8 @@ table {
   justify-content: center;
   padding-top: 10%; }
   .preview__button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
     max-width: 5rem;
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
@@ -147,31 +149,36 @@ table {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin: 10% 10% 10% 15%; }
+    margin: 7% 10% 10% 15%; }
   .preview__name {
     font-family: "Montserrat", sans-serif;
+    font-weight: bold;
     color: #114e4e;
     font-size: 1.125rem;
     border-left: solid #438792 0.3125rem;
     padding-left: 5%;
+    padding-bottom: 3%;
     margin-top: 5%; }
   .preview__job {
     font-family: "Montserrat", sans-serif;
     color: #54585a;
     border-left: solid #438792 0.3125rem;
     padding-left: 5%;
-    padding-bottom: 10%; }
+    padding-bottom: 2%;
+    margin-bottom: 3%; }
   .preview__img {
     text-align: center; }
     .preview__img--file {
-      width: 15rem; }
+      width: 100%; }
   .preview__icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    gap: 1.25rem; }
+    gap: 1.875rem;
+    margin: 4% 0 4% 0; }
     .preview__icons--color {
+      color: #114e4e;
       border: solid 2px #a2deaf;
       border-radius: 80%;
       padding: 25%; }
