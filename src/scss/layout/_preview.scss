@@ -37,7 +37,8 @@
         border-left: solid $color-start rem(5);
         padding-left: 5%;
         padding-bottom: 3%;
-        margin-top: 5%;          
+        margin-top: 5%;  
+        text-transform: capitalize;
     }
     &__job {
         font-family: $font-Mont;

@@ -158,7 +158,8 @@ table {
     border-left: solid #438792 0.3125rem;
     padding-left: 5%;
     padding-bottom: 3%;
-    margin-top: 5%; }
+    margin-top: 5%;
+    text-transform: capitalize; }
   .preview__job {
     font-family: "Montserrat", sans-serif;
     color: #54585a;
@@ -184,10 +185,13 @@ table {
       padding: 25%; }
 
 .design {
-  background-color: red;
   padding-left: 1.25rem;
-  display: flex;
-  flex-direction: row; }
+  padding-right: 1.25rem;
+  padding-top: 1.25rem; }
+  .design__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .design__legend {
     font-size: 1.125rem;
     color: #54585a;
@@ -199,15 +203,54 @@ table {
       width: 2rem;
       height: 1.75rem;
       font-size: 24px; }
-  .design__color {
-    color: #114e4e;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.43;
-    text-transform: uppercase; }
-  .design__radio {
+  .design__palette {
+    padding-top: 1.25rem;
     display: flex;
-    flex-direction: column; }
+    flex-direction: row;
+    justify-content: space-between; }
+    .design__palette__color {
+      color: #114e4e;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      text-transform: uppercase; }
+    .design__palette__radio {
+      /*display: flex;
+            flex-direction: row;  
+            //flex-wrap: wrap;*/ }
+      .design__palette__radio--colors {
+        display: flex;
+        flex-direction: row; }
+    .design__palette--img {
+      transform: scale(0.5); }
+
+.form__legend {
+  font-size: 1.125rem;
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 1.25rem; }
+  .form__legend--icon {
+    color: #e17334;
+    width: 2rem;
+    height: 1.75rem;
+    font-size: 24px; }
+
+.form__box {
+  background-color: #e17334;
+  border-radius: 0.75rem;
+  padding: 0.8125rem 1.125rem 0.8125rem 1.0625rem;
+  display: inline-block; }
+  .form__box--button {
+    background-color: #e17334;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    margin-left: 0.3125rem; }
+  .form__box--icon {
+    color: #ffffff; }
 
 .fill {
   width: 100%;
@@ -252,6 +295,12 @@ table {
   align-items: center;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
+  @media all and (min-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 2.5625rem;
+      padding-right: 2.5rem; } }
   .footer__text {
     font-size: 0.875rem;
     font-family: "Open Sans", sans-serif;

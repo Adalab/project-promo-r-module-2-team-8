@@ -1,19 +1,27 @@
 <fieldset class="design">
-    <legend class="design__legend"><i class="fa-regular fa-object-ungroup design__legend--icon"></i>Diseña</legend>
-    <span class="design__color"> Colores</span>
-    </legend>
-    <div class="design__radio">
-        <label for="">
-            <input type="radio" name="" id="">
-            <div> <img src="" alt=""></div>
-        </label>
-        <label for="">
-            <input type="radio" name="" id="">
-            <div> <img src="" alt=""></div>
-        </label>
-        <label for="">
-            <input type="radio" name="" id="">
-            <div> <img src="" alt=""></div>
-        </label>
+    <div class="design__container">
+        <legend class="design__legend"><i class="fa-regular fa-object-ungroup design__legend--icon"></i>Diseña</legend>
+        <i class="fa-solid fa-angle-up design__legend--arrow"></i>
+        </legend>
     </div>
+    <section class="design__palette">
+        <span class="design__palette__color"> Colores</span>
+        <div class="design__palette__radio">
+            <label for="green" class="design__palette__radio--colors">
+                <input type="radio" name="green" id="green">
+                <div class="design__palette--img"> <img src="./assets/images/palettes/verdes.png"
+                        alt="gama de colores verde"></div>
+            </label>
+            <label for="red" class="design__palette__radio--colors">
+                <input type="radio" name="red" id="red">
+                <div class="design__palette--img"> <img src="./assets/images/palettes/naranjas.png"
+                        alt="gama de colores rojo"></div>
+            </label>
+            <label for="grey" class="design__palette__radio--colors">
+                <input type="radio" name="grey" id="grey">
+                <div class="design__palette--img"> <img src="./assets/images/palettes/grises.png"
+                        alt="gama de colores gris"></div>
+            </label>
+        </div>
+    </section>
 </fieldset>

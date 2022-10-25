@@ -1,23 +1,48 @@
-.design {
-    background-color: red;
+.design {  
     padding-left: rem(20);
-    display: flex;
-    flex-direction: row;
-    
+    padding-right: rem(20);
+    padding-top: rem(20);
+   
+    &__container {        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
     &__legend{
         @include form-title;
         &--icon{
-        @include icons;
+            @include icons;
         }          
-    }
-    &__color {
-        @include form-label;
-        text-transform: uppercase;
-        //separar colores de diseña   
-    }
-    &__radio {
-        display: flex;
-        flex-direction: column;        
+        &--arrow {
+           // @include arrow__expand;
+            
+            
+        }
     }
 
+    &__palette {
+        padding-top: rem(20);
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;    
+        &__color {
+            @include form-label;
+            text-transform: uppercase;
+        //separar colores de diseña   
+        }
+         &__radio {
+            /*display: flex;
+            flex-direction: row;  
+            //flex-wrap: wrap;*/
+             &--colors {
+                display: flex;
+                flex-direction: row;  
+                
+             }   
+        }
+        &--img {
+            transform: scale(0.5);
+        }
+
+    }
 }

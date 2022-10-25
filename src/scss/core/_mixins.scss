@@ -24,3 +24,8 @@
     font-size: 24px;
     
 }
+@mixin arrow__expand{
+    color: $color_gunMetal;
+    font-size: rem(18);
+}
+

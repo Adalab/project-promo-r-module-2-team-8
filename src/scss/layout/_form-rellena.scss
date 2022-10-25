@@ -7,10 +7,11 @@
     padding-left: rem(20);
 
     &__legend {
+        
         @include form-title;
-
         &--icon {
             @include icons;
+            
         }
     }
 

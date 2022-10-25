@@ -5,6 +5,13 @@
     align-items: center;
     padding-top: rem(15);
     padding-bottom: rem(15);
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: rem(41);
+        padding-right: rem(40);
+
+    }
     &__text {
         font-size: rem(14);
         font-family: $font-Open;

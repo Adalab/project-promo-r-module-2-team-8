@@ -1,0 +1,31 @@
+
+.form{
+ &__legend{
+    @include form-title;
+    padding-left: rem(20);
+     
+        &--icon{
+            @include icons;
+        } 
+}
+&__box{
+    background-color: $color-orange;
+    border-radius: rem(12);
+    padding: rem(13) rem(18) rem(13) rem(17);
+    display: inline-block;
+    margin: 0 auto;
+    
+    
+    &--button{
+        background-color: $color-orange;
+       font-family: $font-Open;
+       text-transform: uppercase;
+       color: $color-whireOriginal;
+       border: none;
+       margin-left: rem(5);
+    }
+    &--icon {
+        color: $color-whireOriginal;
+    }
+}
+}
