@@ -98,9 +98,8 @@ table {
       min-width: 25%; }
     .main__list--icon {
       color: #e17334;
-      width: 2rem;
-      height: 1.75rem;
-      font-size: 24px; }
+      font-size: 24px;
+      padding-right: 0.625rem; }
   .main__button {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -188,7 +187,7 @@ table {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1.25rem; }
-  .design__container {
+  .design__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
@@ -200,29 +199,55 @@ table {
     text-transform: uppercase; }
     .design__legend--icon {
       color: #e17334;
-      width: 2rem;
-      height: 1.75rem;
-      font-size: 24px; }
+      font-size: 24px;
+      padding-right: 0.625rem; }
+    .design__legend--arrow {
+      color: #54585a;
+      font-size: 1.125rem; }
   .design__palette {
     padding-top: 1.25rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
-    .design__palette__color {
-      color: #114e4e;
+    justify-content: space-between;
+    /* &--img {            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: scale-down;
+
+           
+        }*/ }
+    .design__palette__span {
+      color: #54585a;
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem;
       line-height: 1.43;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-left: 5%; }
     .design__palette__radio {
-      /*display: flex;
-            flex-direction: row;  
-            //flex-wrap: wrap;*/ }
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1.25rem; }
       .design__palette__radio--colors {
         display: flex;
-        flex-direction: row; }
-    .design__palette--img {
-      transform: scale(0.5); }
+        flex-direction: row;
+        gap: 0.3125rem; }
+    .design__palette__green {
+      padding-right: 30vw;
+      padding-bottom: 8vw;
+      background-image: url(../images/palettes/verdes.png);
+      background-size: cover; }
+    .design__palette__red {
+      padding-right: 30vw;
+      padding-bottom: 8vw;
+      background-image: url(../images/palettes/naranjas.png);
+      background-size: cover; }
+    .design__palette__grey {
+      padding-right: 30vw;
+      padding-bottom: 8vw;
+      background-image: url(../images/palettes/grises.png);
+      background-size: cover; }
 
 .form__legend {
   font-size: 1.125rem;
@@ -233,15 +258,15 @@ table {
   padding-left: 1.25rem; }
   .form__legend--icon {
     color: #e17334;
-    width: 2rem;
-    height: 1.75rem;
-    font-size: 24px; }
+    font-size: 24px;
+    padding-right: 0.625rem; }
 
 .form__box {
   background-color: #e17334;
   border-radius: 0.75rem;
   padding: 0.8125rem 1.125rem 0.8125rem 1.0625rem;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0 auto; }
   .form__box--button {
     background-color: #e17334;
     font-family: "Open Sans", sans-serif;
@@ -267,15 +292,14 @@ table {
     text-transform: uppercase; }
     .fill__legend--icon {
       color: #e17334;
-      width: 2rem;
-      height: 1.75rem;
-      font-size: 24px; }
+      font-size: 24px;
+      padding-right: 0.625rem; }
   .fill__label {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
     .fill__label__text--name, .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
-      color: #114e4e;
+      color: #54585a;
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem;
       line-height: 1.43;

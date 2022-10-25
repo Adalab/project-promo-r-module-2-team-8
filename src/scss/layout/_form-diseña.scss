@@ -3,46 +3,71 @@
     padding-right: rem(20);
     padding-top: rem(20);
    
-    &__container {        
+    &__header {        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }    
     &__legend{
-        @include form-title;
+        @include form-title;        
         &--icon{
-            @include icons;
+            @include icons;  
+                     
         }          
         &--arrow {
-           // @include arrow__expand;
-            
-            
+            @include arrow__expand;                  
         }
     }
-
     &__palette {
         padding-top: rem(20);
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;    
-        &__color {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;         
+        &__span {
             @include form-label;
-            text-transform: uppercase;
-        //separar colores de diseña   
+            text-transform: uppercase; 
+            padding-left: 5%;       
         }
-         &__radio {
-            /*display: flex;
-            flex-direction: row;  
-            //flex-wrap: wrap;*/
-             &--colors {
+         &__radio {                        
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-end;
+            gap: rem(20);  
+                       
+            &--colors {                
                 display: flex;
-                flex-direction: row;  
-                
-             }   
+                flex-direction: row; 
+                gap:rem(5);                  
+             }  
         }
-        &--img {
-            transform: scale(0.5);
+        &__green{    
+            padding-right:30vw;
+            padding-bottom: 8vw;                                    
+            background-image:url(../images/palettes/verdes.png);
+            background-size: cover;              
+            }
+        &__red {
+            padding-right:30vw;
+            padding-bottom: 8vw;                 
+            background-image:url(../images/palettes/naranjas.png);
+            background-size: cover;
         }
+        &__grey {
+            padding-right:30vw;
+            padding-bottom: 8vw;                              
+            background-image:url(../images/palettes/grises.png);
+            background-size: cover;
+        }
+        
+        
+       /* &--img {            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: scale-down;
+
+           
+        }*/
 
     }
 }
