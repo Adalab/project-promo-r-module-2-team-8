@@ -2,15 +2,10 @@
   padding-left: rem(20);
   padding-right: rem(20);
   text-align: center;
-  
- 
-  
-
   &__share {
     display: flex;
     justify-content: space-between; 
-    margin-bottom: rem(30);
-  
+    margin-bottom: rem(30);  
   }
   &__legend {
     @include form-title;
@@ -28,20 +23,13 @@
     display: inline-flex;
     align-self: center;
     margin-bottom: rem(30);
-   
-    
-    
-    
-
-
     &--button {
       background-color: $color-orange;
       font-family: $font-Open;
       text-transform: uppercase;
       color: $color-whireOriginal;
       border: none;
-      margin-left: rem(5);
-      
+      margin-left: rem(5);      
     }
     &--icon {
       color: $color-whireOriginal;

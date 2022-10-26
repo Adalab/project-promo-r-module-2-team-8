@@ -3,21 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: rem(15);
-    padding-bottom: rem(15);
+    padding-top: rem(13);
+    padding-bottom: rem(13);
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
         padding-left: rem(41);
         padding-right: rem(40);
-
     }
     &__text {
         font-size: rem(14);
         font-family: $font-Open;
         color: $color_footer;
         opacity: 0.5;
-        margin-top: rem(18);
+        margin-top: rem(13);
         margin-bottom: rem(18);
     }
     &__box{

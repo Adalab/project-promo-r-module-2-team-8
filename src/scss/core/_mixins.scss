@@ -18,10 +18,14 @@
   line-height: 1.43;
   padding: rem(3) rem(205) rem(7) rem(9);
 }
+@mixin icons-landing{
+  color: $color-orange;
+  font-size: rem(21);  
+}
 @mixin icons {
   color: $color-orange;
   font-size: rem(21);
-  padding-right: rem(10);
+  padding-right: rem(5);
 }
 @mixin arrow__expand {
   color: $color_gunMetal;

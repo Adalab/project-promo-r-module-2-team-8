@@ -3,7 +3,7 @@
   padding-right: rem(20);
   padding-top: rem(20);
 
-  &__header {
+  &__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,14 +60,5 @@
       background-image: url(../images/palettes/grises.png);
       background-size: cover;
     }
-
-    /* &--img {            
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            object-fit: scale-down;
-
-           
-        }*/
   }
 }
