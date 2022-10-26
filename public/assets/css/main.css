@@ -62,17 +62,29 @@ table {
   justify-content: center;
   align-items: center;
   background-color: #f5f5f5; }
+  @media all and (min-width: 768px) {
+    .main {
+      height: 95vh; } }
   .main__img {
     width: 15.625rem;
     height: 3.9375rem;
     margin-top: 8.125rem;
+    margin-top: 10%;
     margin-bottom: 2.5rem; }
+    @media all and (min-width: 768px) {
+      .main__img {
+        margin-top: 5rem;
+        width: 31.25rem;
+        height: 7.875rem; } }
   .main__title {
     color: #e17334;
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-size: 1.25rem;
     margin-bottom: -0.625rem; }
+    @media all and (min-width: 768px) {
+      .main__title {
+        font-size: 2.375rem; } }
   .main__text {
     color: #114e4e;
     font-family: "Open Sans", sans-serif;
@@ -80,6 +92,9 @@ table {
     white-space: pre-line;
     margin-bottom: 1.25rem;
     text-align: center; }
+    @media all and (min-width: 768px) {
+      .main__text {
+        font-size: 1.625rem; } }
   .main__list {
     display: flex;
     border: solid 0.1rem #f2e1d9;
@@ -88,18 +103,29 @@ table {
     padding: 1.125rem 1.25rem 0.8rem 1.25rem;
     margin-top: 2.25rem;
     margin-bottom: 4.0625rem; }
+    @media all and (min-width: 768px) {
+      .main__list {
+        padding: 2.25rem 2.5rem 1.625rem 2.5rem; } }
     .main__list--item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: #54585a;
+      font-family: "Open Sans", sans-serif;
       text-align: center;
       min-width: 25%; }
+      @media all and (min-width: 768px) {
+        .main__list--item {
+          font-size: 1.875rem; } }
     .main__list--icon {
       color: #e17334;
       font-size: 1.3125rem;
       padding-right: 0.625rem; }
+      @media all and (min-width: 768px) {
+        .main__list--icon {
+          font-size: 2.5rem;
+          padding-right: 1.25rem; } }
   .main__button {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;

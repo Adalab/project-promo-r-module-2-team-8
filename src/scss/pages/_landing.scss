@@ -7,11 +7,20 @@
     justify-content: center;
     align-items: center;
     background-color: $color-whiteGround;
+    @include tablet {
+        height: 95vh;        
+    }
     &__img {
         width: rem(250);
         height: rem(63);
         margin-top: rem(130);
+        margin-top: 10%;
         margin-bottom: rem(40);
+        @include tablet {
+            margin-top: rem(80);
+            width: rem(500);
+            height: rem(126);               
+        }
     }
     &__title{
         color:$color-orange;
@@ -19,6 +28,9 @@
         font-weight: 900;
         font-size: rem(20);
         margin-bottom: rem(-10);
+        @include tablet {
+            font-size: rem(38);              
+        }
     }
     &__text {
         color:$color-darkGreen;
@@ -26,8 +38,12 @@
         font-size: rem(12.8);
         white-space: pre-line;
         margin-bottom: rem(20);
-        text-align: center;        
+        text-align: center;  
+        @include tablet {
+            font-size: rem(26);          
+        }      
     }  
+   
     &__list{
         display:flex;  
         border: solid rem(1.6) #f2e1d9;
@@ -35,19 +51,29 @@
         gap: rem(30);  
         padding: rem(18) rem(20) rem(12.8) rem(20); 
         margin-top: rem(36);
-        margin-bottom: rem(65);  
-    
+        margin-bottom: rem(65); 
+        @include tablet {
+            padding: rem(36) rem(40) rem(26) rem(40);           
+        }     
         &--item {
            display: flex;
            flex-direction: column;
            justify-content: center;
            align-items: center;
            color: $color_gunMetal; 
+           font-family: $font-Open;
            text-align: center;  
-           min-width:25%;                 
-        }    
+           min-width:25%;    
+           @include tablet {
+            font-size: rem(30);            
+            }    
+        }
         &--icon {
-            @include icons;            
+            @include icons; 
+            @include tablet {
+                font-size: rem(40);
+                padding-right: rem(20);          
+            }            
         }    
     }  
     &__button {
