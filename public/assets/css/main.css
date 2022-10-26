@@ -340,6 +340,8 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
+    .fill__label--profileimage {
+      margin-top: 0.625rem; }
     .fill__label__text--name, .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
       color: #114e4e;
       font-family: "Open Sans", sans-serif;
@@ -347,6 +349,26 @@ table {
       line-height: 1.43;
       margin-bottom: 0.4375rem;
       margin-top: 0.4375rem; }
+    .fill__label__container {
+      display: flex; }
+      .fill__label__container--box {
+        width: 1.875rem;
+        height: 1.875rem;
+        margin: 0.4375rem 4.625rem 1.25rem 1.25rem;
+        border: solid 1px #a2deaf; }
+      .fill__label__container--button {
+        font-family: "Open Sans", sans-serif;
+        background-color: #e17334;
+        color: #ffffff;
+        font-size: 0.875rem;
+        border-radius: 0.1875rem;
+        width: 8.75rem;
+        height: 1.875rem;
+        margin-top: 0.4375rem;
+        padding-top: 0.375rem;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap; }
   .fill__input {
     border: 0.03125rem solid #a2deaf;
     font-family: "Open Sans", sans-serif;
