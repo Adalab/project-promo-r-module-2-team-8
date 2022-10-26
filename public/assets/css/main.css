@@ -65,7 +65,7 @@ table {
   margin-bottom: 0.4375rem; }
   @media all and (min-width: 768px) {
     .main {
-      height: 90vh; } }
+      height: 100vh; } }
   .main__img {
     width: 15.625rem;
     height: 3.9375rem;
@@ -342,7 +342,8 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
-<<<<<<< HEAD
+    .fill__label--profileimage {
+      margin-top: 0.625rem; }
     .fill__label__text--name {
       color: #114e4e;
       font-family: "Open Sans", sans-serif;
@@ -351,11 +352,6 @@ table {
       margin-bottom: 0.4375rem;
       margin-top: 1.5625rem; }
     .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
-=======
-    .fill__label--profileimage {
-      margin-top: 0.625rem; }
-    .fill__label__text--name, .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
->>>>>>> 45d1bdb6cd95ad4e00ee53f6c645eb7dfc78e7f4
       color: #114e4e;
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem;
@@ -433,8 +429,7 @@ table {
   justify-content: center;
   align-items: center;
   padding-top: 0.8125rem;
-  padding-bottom: 0.8125rem;
-  border-top: 0.0625rem solid #d8d8d8; }
+  padding-bottom: 0.8125rem; }
   @media all and (min-width: 768px) {
     .footer {
       flex-direction: row;

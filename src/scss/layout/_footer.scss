@@ -5,7 +5,8 @@
   align-items: center;
   padding-top: rem(13);
   padding-bottom: rem(13);
-  border-top: rem(1) solid $color-lineFormulary;
+  // border-top: rem(1) solid $color-lineFormulary;
+
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
