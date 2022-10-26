@@ -251,11 +251,12 @@ table {
 
 .form {
   padding-left: 1.25rem;
-  padding-right: 1.25rem; }
+  padding-right: 1.25rem;
+  text-align: center; }
   .form__share {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 1.875rem; }
   .form__legend {
     font-size: 1.125rem;
     color: #54585a;
@@ -274,7 +275,8 @@ table {
     border-radius: 0.75rem;
     padding: 0.8125rem 1.125rem 0.8125rem 1.0625rem;
     display: inline-flex;
-    margin: 0 auto; }
+    align-self: center;
+    margin-bottom: 1.875rem; }
     .form__box--button {
       background-color: #e17334;
       font-family: "Open Sans", sans-serif;

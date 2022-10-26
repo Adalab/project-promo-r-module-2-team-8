@@ -1,11 +1,16 @@
 .form {
   padding-left: rem(20);
   padding-right: rem(20);
+  text-align: center;
+  
+ 
+  
 
   &__share {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
+    margin-bottom: rem(30);
+  
   }
   &__legend {
     @include form-title;
@@ -21,7 +26,13 @@
     border-radius: rem(12);
     padding: rem(13) rem(18) rem(13) rem(17);
     display: inline-flex;
-    margin: 0 auto;
+    align-self: center;
+    margin-bottom: rem(30);
+   
+    
+    
+    
+
 
     &--button {
       background-color: $color-orange;
@@ -30,6 +41,7 @@
       color: $color-whireOriginal;
       border: none;
       margin-left: rem(5);
+      
     }
     &--icon {
       color: $color-whireOriginal;
