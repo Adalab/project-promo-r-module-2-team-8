@@ -2,6 +2,8 @@
   padding-left: rem(20);
   padding-right: rem(20);
   padding-top: rem(20);
+  padding-bottom: rem(30);
+  border-bottom: rem(1) solid $color-lineFormulary;
 
   &__title {
     display: flex;
@@ -25,16 +27,17 @@
     &__span {
       font-family: $font-Open;
       font-size: rem(14);
-      line-height: 1.43;
       color: $color_gunMetal;
       text-transform: uppercase;
-      padding-left: 5%;
+      margin-left: rem(15);
+      margin-top: rem(10);
     }
     &__radio {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       gap: rem(20);
+      margin-top: rem(15);
 
       &--colors {
         display: flex;
@@ -43,22 +46,22 @@
       }
     }
     &__green {
-      padding-right: 30vw;
+      padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/verdes.png);
-      background-size: cover;
+      background-size: contain;
     }
     &__red {
-      padding-right: 30vw;
+      padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/naranjas.png);
-      background-size: cover;
+      background-size: contain;
     }
     &__grey {
-      padding-right: 30vw;
+      padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/grises.png);
-      background-size: cover;
+      background-size: contain;
     }
   }
 }

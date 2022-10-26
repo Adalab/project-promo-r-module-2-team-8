@@ -162,7 +162,7 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10%; }
+  padding-top: 2.375rem; }
   .preview__button {
     font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
@@ -182,7 +182,6 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
     margin: 7% 10% 10% 15%; }
   .preview__name {
     font-family: "Montserrat", sans-serif;
@@ -190,17 +189,16 @@ table {
     color: #114e4e;
     font-size: 1.125rem;
     border-left: solid #438792 0.3125rem;
-    padding-left: 5%;
-    padding-bottom: 3%;
-    margin-top: 5%;
+    padding-left: 0.9375rem;
+    padding-bottom: 0.3125rem;
+    margin-top: 1.25rem;
     text-transform: capitalize; }
   .preview__job {
     font-family: "Montserrat", sans-serif;
     color: #54585a;
     border-left: solid #438792 0.3125rem;
-    padding-left: 5%;
-    padding-bottom: 2%;
-    margin-bottom: 3%; }
+    padding-left: 0.9375rem;
+    margin-bottom: 0.625rem; }
   .preview__img {
     text-align: center; }
     .preview__img--file {
@@ -208,20 +206,20 @@ table {
   .preview__icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    gap: 1.875rem;
-    margin: 4% 0 4% 0; }
+    gap: 0.625rem;
+    margin: 0.625rem 0.625rem 0.625rem 1.25rem; }
     .preview__icons--color {
       color: #114e4e;
       border: solid 2px #a2deaf;
-      border-radius: 80%;
-      padding: 25%; }
+      border-radius: 1rem;
+      padding: 0.3125rem; }
 
 .design {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-top: 1.25rem; }
+  padding-top: 1.25rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 0.0625rem solid #d8d8d8; }
   .design__title {
     display: flex;
     flex-direction: row;
@@ -247,39 +245,41 @@ table {
     .design__palette__span {
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem;
-      line-height: 1.43;
       color: #54585a;
       text-transform: uppercase;
-      padding-left: 5%; }
+      margin-left: 0.9375rem;
+      margin-top: 0.625rem; }
     .design__palette__radio {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 1.25rem; }
+      gap: 1.25rem;
+      margin-top: 0.9375rem; }
       .design__palette__radio--colors {
         display: flex;
         flex-direction: row;
         gap: 0.3125rem; }
     .design__palette__green {
-      padding-right: 30vw;
+      padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/verdes.png);
-      background-size: cover; }
+      background-size: contain; }
     .design__palette__red {
-      padding-right: 30vw;
+      padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/naranjas.png);
-      background-size: cover; }
+      background-size: contain; }
     .design__palette__grey {
-      padding-right: 30vw;
+      padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/grises.png);
-      background-size: cover; }
+      background-size: contain; }
 
 .form {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 0.0625rem solid #d8d8d8; }
   .form__share {
     display: flex;
     justify-content: space-between;
@@ -318,7 +318,9 @@ table {
   margin-bottom: 1.875rem;
   margin-top: 1.875rem;
   padding-left: 1.25rem;
-  padding-right: 1.25rem; }
+  padding-right: 1.25rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 0.0625rem solid #d8d8d8; }
   .fill__title {
     display: flex;
     flex-direction: row;
@@ -340,7 +342,14 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
-    .fill__label__text--name, .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
+    .fill__label__text--name {
+      color: #114e4e;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      margin-bottom: 0.4375rem;
+      margin-top: 1.5625rem; }
+    .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
       color: #114e4e;
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem;
@@ -352,14 +361,14 @@ table {
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
     line-height: 1.43;
-    padding: 0.1875rem 12.8125rem 0.4375rem 0.5625rem;
-    width: 95%; }
+    padding: 0.3125rem; }
 
 .CardContainer {
   display: flex;
   flex-direction: column;
   margin-top: 1.25rem;
-  margin-bottom: 0.3125rem; }
+  margin-bottom: 0.3125rem;
+  border-bottom: 0.0625rem solid #d8d8d8; }
   .CardContainer__card {
     font-family: "Open Sans", sans-serif;
     color: #54585a;
@@ -398,7 +407,8 @@ table {
   justify-content: center;
   align-items: center;
   padding-top: 0.8125rem;
-  padding-bottom: 0.8125rem; }
+  padding-bottom: 0.8125rem;
+  border-top: 0.0625rem solid #d8d8d8; }
   @media all and (min-width: 768px) {
     .footer {
       flex-direction: row;

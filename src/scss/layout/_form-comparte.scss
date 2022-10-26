@@ -2,10 +2,11 @@
   padding-left: rem(20);
   padding-right: rem(20);
   text-align: center;
+  border-bottom: rem(1) solid $color-lineFormulary;
   &__share {
     display: flex;
-    justify-content: space-between; 
-    margin-bottom: rem(30);  
+    justify-content: space-between;
+    margin-bottom: rem(30);
   }
   &__legend {
     @include form-title;
@@ -29,7 +30,7 @@
       text-transform: uppercase;
       color: $color-whireOriginal;
       border: none;
-      margin-left: rem(5);      
+      margin-left: rem(5);
     }
     &--icon {
       color: $color-whireOriginal;

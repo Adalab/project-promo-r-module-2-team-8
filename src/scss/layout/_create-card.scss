@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: rem(20);
   margin-bottom: rem(5);
+  border-bottom: rem(1) solid $color-lineFormulary;
 
   &__card {
     font-family: $font-Open;

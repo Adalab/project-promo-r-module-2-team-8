@@ -2,14 +2,16 @@
   margin-bottom: rem(30);
   margin-top: rem(30);
   padding-left: rem(20);
-  padding-right: rem(20); 
+  padding-right: rem(20);
+  padding-bottom: rem(30);
+  border-bottom: rem(1) solid $color-lineFormulary;
 
   &__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  &__legend {    
+  &__legend {
     @include form-title;
     &--icon {
       @include icons;
@@ -24,7 +26,11 @@
     justify-content: flex-start;
 
     &__text {
-      &--name,
+      &--name {
+        @include form-label;
+        margin-bottom: rem(7);
+        margin-top: rem(25);
+      }
       &--jobposition,
       &--email,
       &--telefono,
@@ -39,6 +45,7 @@
   }
   &__input {
     @include form-placeholder;
-    width: 95%; //Podemos poner padding laterales
+    padding: rem(5);
+    // width: 95%; //Podemos poner padding laterales
   }
 }

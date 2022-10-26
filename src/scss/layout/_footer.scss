@@ -1,29 +1,30 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: rem(13);
-    padding-bottom: rem(13);
-    @include tablet {
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: rem(41);
-        padding-right: rem(40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: rem(13);
+  padding-bottom: rem(13);
+  border-top: rem(1) solid $color-lineFormulary;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: rem(41);
+    padding-right: rem(40);
+  }
+  &__text {
+    font-size: rem(14);
+    font-family: $font-Open;
+    color: $color_footer;
+    opacity: 0.5;
+    margin-top: rem(13);
+    margin-bottom: rem(18);
+  }
+  &__box {
+    padding: rem(5);
+    &--logo {
+      width: rem(103);
+      height: rem(40);
     }
-    &__text {
-        font-size: rem(14);
-        font-family: $font-Open;
-        color: $color_footer;
-        opacity: 0.5;
-        margin-top: rem(13);
-        margin-bottom: rem(18);
-    }
-    &__box{
-        padding: rem(5);
-        &--logo{
-        width: rem(103);
-        height: rem(40);
-    }
-}
+  }
 }

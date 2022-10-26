@@ -16,11 +16,11 @@
   font-family: $font-Open;
   font-size: rem(14);
   line-height: 1.43;
-  padding: rem(3) rem(205) rem(7) rem(9);
+  // padding: rem(3) rem(205) rem(7) rem(9);
 }
-@mixin icons-landing{
+@mixin icons-landing {
   color: $color-orange;
-  font-size: rem(21);  
+  font-size: rem(21);
 }
 @mixin icons {
   color: $color-orange;
