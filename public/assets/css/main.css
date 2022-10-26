@@ -98,7 +98,7 @@ table {
       min-width: 25%; }
     .main__list--icon {
       color: #e17334;
-      font-size: 24px;
+      font-size: 1.3125rem;
       padding-right: 0.625rem; }
   .main__button {
     font-family: "Open Sans", sans-serif;
@@ -199,7 +199,7 @@ table {
     text-transform: uppercase; }
     .design__legend--icon {
       color: #e17334;
-      font-size: 24px;
+      font-size: 1.3125rem;
       padding-right: 0.625rem; }
     .design__legend--arrow {
       color: #54585a;
@@ -218,10 +218,10 @@ table {
            
         }*/ }
     .design__palette__span {
-      color: #54585a;
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem;
       line-height: 1.43;
+      color: #54585a;
       text-transform: uppercase;
       padding-left: 5%; }
     .design__palette__radio {
@@ -249,33 +249,41 @@ table {
       background-image: url(../images/palettes/grises.png);
       background-size: cover; }
 
-.form__legend {
-  font-size: 1.125rem;
-  color: #54585a;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-left: 1.25rem; }
-  .form__legend--icon {
-    color: #e17334;
-    font-size: 24px;
-    padding-right: 0.625rem; }
-
-.form__box {
-  background-color: #e17334;
-  border-radius: 0.75rem;
-  padding: 0.8125rem 1.125rem 0.8125rem 1.0625rem;
-  display: inline-block;
-  margin: 0 auto; }
-  .form__box--button {
-    background-color: #e17334;
+.form {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem; }
+  .form__share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .form__legend {
+    font-size: 1.125rem;
+    color: #54585a;
     font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
-    border: none;
-    margin-left: 0.3125rem; }
-  .form__box--icon {
-    color: #ffffff; }
+    font-weight: 600;
+    text-transform: uppercase; }
+    .form__legend--icon {
+      color: #e17334;
+      font-size: 1.3125rem;
+      padding-right: 0.625rem; }
+    .form__legend--arrow {
+      color: #54585a;
+      font-size: 1.125rem; }
+  .form__box {
+    background-color: #e17334;
+    border-radius: 0.75rem;
+    padding: 0.8125rem 1.125rem 0.8125rem 1.0625rem;
+    display: inline-flex;
+    margin: 0 auto; }
+    .form__box--button {
+      background-color: #e17334;
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      color: #ffffff;
+      border: none;
+      margin-left: 0.3125rem; }
+    .form__box--icon {
+      color: #ffffff; }
 
 .fill {
   width: 100%;
@@ -285,6 +293,9 @@ table {
   margin-top: 1.875rem;
   padding-left: 1.25rem; }
   .fill__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 1.125rem;
     color: #54585a;
     font-family: "Open Sans", sans-serif;
@@ -292,25 +303,52 @@ table {
     text-transform: uppercase; }
     .fill__legend--icon {
       color: #e17334;
-      font-size: 24px;
+      font-size: 1.3125rem;
       padding-right: 0.625rem; }
   .fill__label {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
     .fill__label__text--name, .fill__label__text--jobposition, .fill__label__text--email, .fill__label__text--telefono, .fill__label__text--linkedin, .fill__label__text--profileimage, .fill__label__text--github {
-      color: #54585a;
+      color: #114e4e;
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem;
       line-height: 1.43;
       margin-bottom: 0.4375rem;
       margin-top: 0.4375rem; }
   .fill__input {
-    color: #c5c5c5;
+    border: 0.03125rem solid #a2deaf;
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
     line-height: 1.43;
+    padding: 0.1875rem 12.8125rem 0.4375rem 0.5625rem;
     width: 95%; }
+
+.CardContainer {
+  display: flex;
+  flex-direction: column; }
+  .CardContainer__card {
+    font-family: "Open Sans", sans-serif;
+    color: #54585a;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 auto;
+    gap: 1.25rem; }
+
+.container {
+  background-color: #00a0f5;
+  border-radius: 0.1875rem;
+  padding: 0.1875rem 0.5625rem 0.375rem 0.65625rem;
+  margin: 0 auto; }
+  .container__btn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    color: #ffffff;
+    border: none;
+    background-color: #00a0f5;
+    margin-left: 0.3125rem; }
+  .container__icon {
+    color: #ffffff; }
 
 .footer {
   display: flex;

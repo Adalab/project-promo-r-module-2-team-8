@@ -1,30 +1,29 @@
 @mixin form-title {
-    font-size: rem(18);
-    color: $color_gunMetal;
-    font-family: $font-Open;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: rem(18);
+  color: $color_gunMetal;
+  font-family: $font-Open;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 @mixin form-label {
-    color: $color_gunMetal;
-    font-family: $font-Open;
-    font-size: rem(14);
-    line-height: 1.43;
+  color: $color-darkGreen;
+  font-family: $font-Open;
+  font-size: rem(14);
+  line-height: 1.43;
 }
 @mixin form-placeholder {
-    color: $color-placeHolder;
-    font-family: $font-Open;
-    font-size: rem(14);
-    line-height: 1.43;
+  border: rem(0.5) solid $color-input;
+  font-family: $font-Open;
+  font-size: rem(14);
+  line-height: 1.43;
+  padding: rem(3) rem(205) rem(7) rem(9);
 }
 @mixin icons {
-    color: $color-orange;    
-    font-size: 24px;
-    padding-right: rem(10);
-    
+  color: $color-orange;
+  font-size: rem(21);
+  padding-right: rem(10);
 }
-@mixin arrow__expand{
-    color: $color_gunMetal;
-    font-size: rem(18);
+@mixin arrow__expand {
+  color: $color_gunMetal;
+  font-size: rem(18);
 }
-

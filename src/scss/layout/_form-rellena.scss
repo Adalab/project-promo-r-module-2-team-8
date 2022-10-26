@@ -1,45 +1,43 @@
 .fill {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(30);
+  margin-top: rem(30);
+  padding-left: rem(20);
+
+  &__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include form-title;
+    &--icon {
+      @include icons;
+    }
+  }
+
+  &__label {
     display: flex;
     flex-direction: column;
-    margin-bottom: rem(30);
-    margin-top: rem(30);
-    padding-left: rem(20);
+    justify-content: flex-start;
 
-    &__legend {
-        
-        @include form-title;
-        &--icon {
-            @include icons;
-            
-        }
+    &__text {
+      &--name,
+      &--jobposition,
+      &--email,
+      &--telefono,
+      &--linkedin,
+      &--profileimage,
+      &--github {
+        @include form-label;
+        margin-bottom: rem(7);
+        margin-top: rem(7);
+      }
     }
+  }
 
-    &__label {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        &__text {
-
-            &--name,
-            &--jobposition,
-            &--email,
-            &--telefono,
-            &--linkedin,
-            &--profileimage,
-            &--github {
-
-                @include form-label;
-                margin-bottom: rem(7);
-                margin-top: rem(7);
-
-            }
-        }
-    }
-
-    &__input {
-        @include form-placeholder;
-        width: 95%; //Podemos poner padding laterales
-    }
+  &__input {
+    @include form-placeholder;
+    width: 95%; //Podemos poner padding laterales
+  }
 }

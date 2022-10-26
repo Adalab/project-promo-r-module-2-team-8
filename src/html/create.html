@@ -21,10 +21,12 @@
             <include src="./partials/form-rellena.html"></include>
             <include src="./partials/form-comparte.html"></include>
         </form>
-        <div>
-            <h3>La tarjeta ha sido creada:</h3>
-            <label for=""><i class="fa-brands fa-twitter"></i><input type="submit" name="" id=""
-                    value="Compartir en twitter"></label>
+        <div class="CardContainer">
+            <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
+            <div class="container">
+                <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit" name="compartir-twitter" id="compartir-twitter"
+                        value="Compartir en twitter" class="container__btn"></label>
+            </div>
         </div>
     </main>
     <include src="./partials/footer.html"></include>

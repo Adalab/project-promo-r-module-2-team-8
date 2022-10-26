@@ -1,0 +1,32 @@
+.CardContainer {
+  display: flex;
+  flex-direction: column;
+
+  &__card {
+    font-family: $font-Open;
+    color: $color_gunMetal;
+    font-size: rem(18);
+    font-weight: 600;
+    margin: 0 auto;
+    gap: rem(20);
+  }
+}
+
+.container {
+  background-color: $color-azure;
+  border-radius: rem(3);
+  padding: rem(3) rem(9) rem(6) rem(10.5);
+  margin: 0 auto;
+
+  &__btn {
+    font-family: $font-Open;
+    font-size: rem(14);
+    color: $color-whireOriginal;
+    border: none;
+    background-color: $color-azure;
+    margin-left: rem(5);
+  }
+  &__icon {
+    color: $color-whireOriginal;
+  }
+}

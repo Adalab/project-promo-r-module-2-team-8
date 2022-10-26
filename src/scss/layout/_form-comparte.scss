@@ -1,31 +1,38 @@
+.form {
+  padding-left: rem(20);
+  padding-right: rem(20);
 
-.form{
- &__legend{
+  &__share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__legend {
     @include form-title;
-    padding-left: rem(20);
-     
-        &--icon{
-            @include icons;
-        } 
-}
-&__box{
+    &--icon {
+      @include icons;
+    }
+    &--arrow {
+      @include arrow__expand;
+    }
+  }
+  &__box {
     background-color: $color-orange;
     border-radius: rem(12);
     padding: rem(13) rem(18) rem(13) rem(17);
-    display: inline-block;
+    display: inline-flex;
     margin: 0 auto;
-    
-    
-    &--button{
-        background-color: $color-orange;
-       font-family: $font-Open;
-       text-transform: uppercase;
-       color: $color-whireOriginal;
-       border: none;
-       margin-left: rem(5);
+
+    &--button {
+      background-color: $color-orange;
+      font-family: $font-Open;
+      text-transform: uppercase;
+      color: $color-whireOriginal;
+      border: none;
+      margin-left: rem(5);
     }
     &--icon {
-        color: $color-whireOriginal;
+      color: $color-whireOriginal;
     }
-}
+  }
 }
