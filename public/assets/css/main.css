@@ -157,12 +157,22 @@ table {
     width: 12.5rem;
     height: 3.125rem; }
 
+@media all and (min-width: 768px) {
+  .mainCreate {
+    display: flex;
+    flex-direction: row-reverse; } }
+
 .preview {
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 2.375rem; }
+  @media all and (min-width: 768px) {
+    .preview {
+      flex-direction: column;
+      margin-right: 1.875rem;
+      padding-bottom: 12.5rem; } }
   .preview__button {
     font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
@@ -218,8 +228,7 @@ table {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1.25rem;
-  padding-bottom: 1.875rem;
-  border-bottom: 0.0625rem solid #d8d8d8; }
+  padding-bottom: 1.875rem; }
   .design__title {
     display: flex;
     flex-direction: row;
@@ -275,11 +284,15 @@ table {
       background-image: url(../images/palettes/grises.png);
       background-size: contain; }
 
+.border_button {
+  border-bottom: 0.0625rem solid #d8d8d8;
+  width: 95%;
+  padding-top: 1.875rem; }
+
 .form {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  text-align: center;
-  border-bottom: 0.0625rem solid #d8d8d8; }
+  text-align: center; }
   .form__share {
     display: flex;
     justify-content: space-between;
@@ -314,13 +327,17 @@ table {
     .form__box--icon {
       color: #ffffff; }
 
+.border_button {
+  border-bottom: 0.0625rem solid #d8d8d8;
+  width: 95%;
+  padding-top: 1.875rem; }
+
 .fill {
   margin-bottom: 1.875rem;
   margin-top: 1.875rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-bottom: 1.875rem;
-  border-bottom: 0.0625rem solid #d8d8d8; }
+  padding-bottom: 1.875rem; }
   .fill__title {
     display: flex;
     flex-direction: row;
@@ -385,12 +402,16 @@ table {
     line-height: 1.43;
     padding: 0.3125rem; }
 
+.border_button {
+  border-bottom: 0.0625rem solid #d8d8d8;
+  width: 95%;
+  padding-top: 1.875rem; }
+
 .CardContainer {
   display: flex;
   flex-direction: column;
   margin-top: 1.25rem;
-  margin-bottom: 0.3125rem;
-  border-bottom: 0.0625rem solid #d8d8d8; }
+  margin-bottom: 0.3125rem; }
   .CardContainer__card {
     font-family: "Open Sans", sans-serif;
     color: #54585a;

@@ -4,7 +4,7 @@
   padding-left: rem(20);
   padding-right: rem(20);
   padding-bottom: rem(30);
-  border-bottom: rem(1) solid $color-lineFormulary;
+ // border-bottom: rem(1) solid $color-lineFormulary;
 
   &__title {
     display: flex;
@@ -75,4 +75,8 @@
     padding: rem(5);
     // width: 95%; //Podemos poner padding laterales
   }
+}
+
+.border_button {
+  @include border_button
 }

@@ -16,7 +16,7 @@
     <header class="header">
         <img class="header__logo" src="./assets/images/logo-awesome.svg" alt="logo">
     </header>
-    <main>
+    <main class="mainCreate">
         <section class="preview">
             <button class="preview__button"><i class="fa-regular fa-trash-can preview__button--can"></i>Reset</button>
             <article class="preview__container">
@@ -56,6 +56,8 @@
                         </label>
                     </div>
                 </section>
+                <div class="border_button"></div>
+                
             </fieldset>
             <fieldset class="fill">
                     <div class="fill__title">
@@ -104,6 +106,7 @@
                             <input class="fill__input fill__input--github" type="text" name="github" id="github"
                                     placeholder="Ej: @sally-hill">
                     </label>
+                    <div class="border_button"></div>
             </fieldset>
             <fieldset class="form">
                 <div class="form__share">
@@ -120,17 +123,20 @@
                             id="create-card" value="Crear tarjeta" class="form__box--button" />
                     </div>
                 </label>
+                <!-- Hemos sacado el Comparte de Twitter del CreateHTML para que nos funcione flex en mediaquerie-->
+                <div class="CardContainer">
+                    <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
+                    <h4 class="CardContainer__url">URL de tarjeta creada</h4>
+                    <div class="container">
+                        <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit" name="compartir-twitter" id="compartir-twitter"
+                                value="Compartir en twitter" class="container__btn"></label>
+                    </div>
+                </div>
+                <div class="border_button"></div>
 
             </fieldset>
         </form>
-        <div class="CardContainer">
-            <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
-            <h4 class="CardContainer__url">URL de tarjeta creada</h4>
-            <div class="container">
-                <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit" name="compartir-twitter" id="compartir-twitter"
-                        value="Compartir en twitter" class="container__btn"></label>
-            </div>
-        </div>
+     
     </main>
     <footer class="footer">
         <p class="footer__text">Awesome profile-cards @2022</p>

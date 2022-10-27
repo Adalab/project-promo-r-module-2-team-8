@@ -3,7 +3,7 @@
   padding-right: rem(20);
   padding-top: rem(20);
   padding-bottom: rem(30);
-  border-bottom: rem(1) solid $color-lineFormulary;
+  //border-bottom: rem(1) solid $color-lineFormulary;
 
   &__title {
     display: flex;
@@ -65,3 +65,8 @@
     }
   }
 }
+
+.border_button {
+  @include border_button
+}
+

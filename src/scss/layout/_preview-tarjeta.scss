@@ -4,6 +4,11 @@
   flex-direction: column;
   justify-content: center;
   padding-top: rem(38);
+    @include tablet {
+      flex-direction: column;
+      margin-right: rem(30);
+      padding-bottom: rem(200);
+    }
 
   &__button {
     font-family: $font-Open;
