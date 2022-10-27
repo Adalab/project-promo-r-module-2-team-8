@@ -234,9 +234,6 @@ table {
       color: #e17334;
       font-size: 1.3125rem;
       padding-right: 0.3125rem; }
-    .design__legend--arrow {
-      color: #54585a;
-      font-size: 1.125rem; }
   .design__palette {
     padding-top: 1.25rem;
     display: flex;
@@ -294,9 +291,6 @@ table {
       color: #e17334;
       font-size: 1.3125rem;
       padding-right: 0.3125rem; }
-    .form__legend--arrow {
-      color: #54585a;
-      font-size: 1.125rem; }
   .form__box {
     background-color: #e17334;
     border-radius: 0.75rem;
@@ -335,9 +329,6 @@ table {
       color: #e17334;
       font-size: 1.3125rem;
       padding-right: 0.3125rem; }
-    .fill__legend--arrow {
-      color: #54585a;
-      font-size: 1.125rem; }
   .fill__label {
     display: flex;
     flex-direction: column;
@@ -448,5 +439,12 @@ table {
     .footer__box--logo {
       width: 6.4375rem;
       height: 2.5rem; }
+
+.legend--arrow {
+  color: #54585a;
+  font-size: 1.125rem; }
+
+.collapse {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

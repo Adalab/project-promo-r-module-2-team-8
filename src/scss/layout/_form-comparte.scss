@@ -12,10 +12,7 @@
     @include form-title;
     &--icon {
       @include icons;
-    }
-    &--arrow {
-      @include arrow__expand;
-    }
+    }   
   }
   &__box {
     background-color: $color-orange;

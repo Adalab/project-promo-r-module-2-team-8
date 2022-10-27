@@ -16,9 +16,7 @@
     &--icon {
       @include icons;
     }
-    &--arrow {
-      @include arrow__expand;
-    }
+   
   }
   &__label {
     display: flex;

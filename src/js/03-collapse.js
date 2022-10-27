@@ -1,10 +1,3 @@
-const arrow = document.querySelector('.legend--arrow'); //flecha para abrir y cerrar los menús
-const designBox= document.querySelector('.js-design'); //div de "diseña"
-const fillBox= document.querySelector('.js-fill'); //div de "rellena"
-const formBox= document.querySelector('.js-form'); //div de "comparte"
-
-
-
 arrow.addEventListener('click', (event) =>{
     event.preventDefault();
     console.log(event.currentTarget);
@@ -21,4 +14,3 @@ arrow.addEventListener('click', (event) =>{
 });
 //flechita para abajo <i class="fa-solid fa-angle-down"></i>
 // flechita para arriba <i class="fa-solid fa-angle-up"></i>
-//# sourceMappingURL=main.js.map

@@ -15,9 +15,7 @@
     &--icon {
       @include icons;
     }
-    &--arrow {
-      @include arrow__expand;
-    }
+    
   }
   &__palette {
     padding-top: rem(20);
