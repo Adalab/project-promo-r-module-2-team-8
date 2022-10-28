@@ -273,16 +273,28 @@ table {
       padding-bottom: 8vw;
       background-image: url(../images/palettes/verdes.png);
       background-size: contain; }
+      @media all and (min-width: 768px) {
+        .design__palette__green {
+          padding-right: 15vw;
+          padding-bottom: 5vw; } }
     .design__palette__red {
       padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/naranjas.png);
       background-size: contain; }
+      @media all and (min-width: 768px) {
+        .design__palette__red {
+          padding-right: 15vw;
+          padding-bottom: 5vw; } }
     .design__palette__grey {
       padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/grises.png);
       background-size: contain; }
+      @media all and (min-width: 768px) {
+        .design__palette__grey {
+          padding-right: 15vw;
+          padding-bottom: 5vw; } }
 
 .border_button {
   border-bottom: 0.0625rem solid #d8d8d8;
@@ -378,8 +390,6 @@ table {
     .fill__label__container {
       display: flex; }
       .fill__label__container--box {
-        width: 1.875rem;
-        height: 1.875rem;
         margin: 0.4375rem 4.625rem 1.25rem 1.25rem;
         border: solid 1px #a2deaf; }
       .fill__label__container--button {

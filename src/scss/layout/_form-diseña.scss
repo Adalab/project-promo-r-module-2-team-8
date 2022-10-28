@@ -50,23 +50,34 @@
       padding-bottom: 8vw;
       background-image: url(../images/palettes/verdes.png);
       background-size: contain;
+      @include tablet {
+        padding-right: 15vw;
+        padding-bottom: 5vw;
+      }
     }
     &__red {
       padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/naranjas.png);
       background-size: contain;
+      @include tablet {
+        padding-right: 15vw;
+        padding-bottom: 5vw;
+      }
     }
     &__grey {
       padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/grises.png);
       background-size: contain;
+      @include tablet {
+        padding-right: 15vw;
+        padding-bottom: 5vw;
+      }
     }
   }
 }
 
 .border_button {
-  @include border_button
+  @include border_button;
 }
-
