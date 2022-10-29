@@ -9,7 +9,7 @@
   background-color: $color-whiteGround;
   margin-bottom: rem(7);
   @include tablet {
-    height: 100vh;
+    height: 90vh;
   }
   &__img {
     width: rem(250);

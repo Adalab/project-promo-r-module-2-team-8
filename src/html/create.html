@@ -14,22 +14,13 @@
 
 <body>
     <include src="./partials/header.html"></include>
-    <main>
+    <main class="mainCreate">
         <include src="./partials/preview-tarjeta.html"></include>
-        <form action="">
+        <form class="container-form" action="">
             <include src="./partials/form-diseña.html"></include>
             <include src="./partials/form-rellena.html"></include>
             <include src="./partials/form-comparte.html"></include>
         </form>
-        <div class="CardContainer">
-            <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
-            <h4 class="CardContainer__url">URL de tarjeta creada</h4>
-            <div class="container">
-                <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit"
-                        name="compartir-twitter" id="compartir-twitter" value="Compartir en twitter"
-                        class="container__btn"></label>
-            </div>
-        </div>
     </main>
     <include src="./partials/footer.html"></include>
     <script src="./assets/js/main.js"></script>

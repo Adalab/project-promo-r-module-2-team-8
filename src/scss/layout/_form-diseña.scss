@@ -1,9 +1,18 @@
+.container-form {
+  @include tablet {
+    flex-grow: 2;
+  }
+  @include desktop {
+    flex-grow: 1;
+  }
+}
+
 .design {
   padding-left: rem(20);
   padding-right: rem(20);
   padding-top: rem(20);
   padding-bottom: rem(30);
-  border-bottom: rem(1) solid $color-lineFormulary;
+  //border-bottom: rem(1) solid $color-lineFormulary;
 
   &__title {
     display: flex;
@@ -48,18 +57,46 @@
       padding-bottom: 8vw;
       background-image: url(../images/palettes/verdes.png);
       background-size: contain;
+      @include tablet {
+        padding-right: 15vw;
+        padding-bottom: 5vw;
+      }
+      @include desktop {
+        padding-right: 10vw;
+        padding-bottom: 3vw;
+      }
     }
     &__red {
       padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/naranjas.png);
       background-size: contain;
+      @include tablet {
+        padding-right: 15vw;
+        padding-bottom: 5vw;
+      }
+      @include desktop {
+        padding-right: 10vw;
+        padding-bottom: 3vw;
+      }
     }
     &__grey {
       padding-right: 25vw;
       padding-bottom: 8vw;
       background-image: url(../images/palettes/grises.png);
       background-size: contain;
+      @include tablet {
+        padding-right: 15vw;
+        padding-bottom: 5vw;
+      }
+      @include desktop {
+        padding-right: 10vw;
+        padding-bottom: 3vw;
+      }
     }
   }
+}
+
+.border_button {
+  @include border_button;
 }

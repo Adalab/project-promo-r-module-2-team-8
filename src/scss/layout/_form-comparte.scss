@@ -2,7 +2,9 @@
   padding-left: rem(20);
   padding-right: rem(20);
   text-align: center;
-  border-bottom: rem(1) solid $color-lineFormulary;
+  // Hemos quitado la línea que se ve encima del footer
+ // border-bottom: rem(1) solid $color-lineFormulary; 
+   
   &__share {
     display: flex;
     justify-content: space-between;
@@ -33,4 +35,8 @@
       color: $color-whireOriginal;
     }
   }
+}
+
+.border_button {
+  @include border_button
 }
