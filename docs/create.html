@@ -36,10 +36,10 @@
             <fieldset class="design">
                 <div class="design__title">
                     <legend class="design__legend"><i class="fa-regular fa-object-ungroup design__legend--icon"></i>Diseña</legend>
-                    <i class="fa-solid fa-angle-up design__legend--arrow"></i>
+                    <i class="fa-solid fa-angle-up legend--arrow--up"></i><i class="fa-solid fa-angle-down collapse legend--arrow--down"></i>
 
                 </div>
-                <section class="design__palette">
+                <section class="design__palette js-design">
                     <span class="design__palette__span"> Colores</span>
                     <div class="design__palette__radio">
                         <label for="green" class="design__palette__radio--colors">
@@ -63,49 +63,50 @@
                     <div class="fill__title">
                             <legend class="fill__legend"><i class="fa-regular fa-keyboard fill__legend--icon"></i>
                                     Rellena </legend>
-                            <i class="fa-solid fa-angle-up design__legend--arrow"></i>
+                            <i class="fa-solid fa-angle-up legend--arrow--up"></i>
+                            <i class="fa-solid fa-angle-down collapse legend--arrow--down"></i>
                     </div>
 
 
-                    <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name"> Nombre
-                                    completo</span>
-                            <input class="fill__input fill__input--name" type="text" name="name" id="name"
-                                    placeholder="Ej: Sally Jill">
-                    </label>
-
-                    <label for="job-position" class="fill__label fill__label--jobposition"><span
-                                    class="fill__label__text--jobposition">Puesto</span>
-                            <input class="fill__input fill__input--jobposition" type="text" name="job-position" id="job-position"
-                                    placeholder="Ej: Front-end unicorn">
-                    </label>
-                    <label for="profile-image" class="fill__label fill__label--profileimage">
-                            <span class="fill__label__text--profileimage">Imagen de perfil</span>
-                            <div class="fill__label__container">
-                            <a href="" class="fill__label__container--button">Añadir imagen</a>
-                            <div class="fill__label__container--box"></div>
-                            </div>
-
-                    </label>
-                    <label for="emailaddress" class="fill__label fill__label--email"><span
-                                    class="fill__label__text--email">Email</span>
-                            <input class="fill__input fill__input--email" type="email" name="emailaddress" id="emailaddress"
-                                    placeholder="Ej: sally.hill@gmail.com">
-                    </label>
-                    <label for="telefono" class="fill__label fill__input--telefono">
-                            <span class="fill__label__text--telefono">Teléfono</span>
-                            <input class="fill__input fill__input--telefono" type="text" type="tel" name="telephone" id="telephone"
-                            placeholder="Ej: 555-55-55-55">
-                    </label>
-                    <label for="linkedin" class="fill__label fill__label--linkedin">
-                            <span class="fill__label__text--linkedin">Linkedin</span>
-                            <input class="fill__input fill__input--linkedin" type="text" name="linkedin" id="linkedin"
-                                    placeholder="Ej: linkedin.com/in/sally-hill">
-                    </label>
-                    <label for="github" class="fill__label fill__label--github"><span
-                                    class="fill__label__text--github">Github</span>
-                            <input class="fill__input fill__input--github" type="text" name="github" id="github"
-                                    placeholder="Ej: @sally-hill">
-                    </label>
+                    <div class="js-fill collapse">
+                            <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name"> Nombre
+                                            completo</span>
+                                    <input class="fill__input fill__input--name" type="text" name="name" id="name"
+                                            placeholder="Ej: Sally Jill">
+                            </label>
+                            <label for="job-position" class="fill__label fill__label--jobposition"><span
+                                            class="fill__label__text--jobposition">Puesto</span>
+                                    <input class="fill__input fill__input--jobposition" type="text" name="job-position"
+                                            id="job-position" placeholder="Ej: Front-end unicorn">
+                            </label>
+                            <label for="profile-image" class="fill__label fill__label--profileimage">
+                                    <span class="fill__label__text--profileimage">Imagen de perfil</span>
+                                    <div class="fill__label__container">
+                                            <a href="" class="fill__label__container--button">Añadir imagen</a>
+                                            <div class="fill__label__container--box"></div>
+                                    </div>
+                            </label>
+                            <label for="emailaddress" class="fill__label fill__label--email"><span
+                                            class="fill__label__text--email">Email</span>
+                                    <input class="fill__input fill__input--email" type="email" name="emailaddress" id="emailaddress"
+                                            placeholder="Ej: sally.hill@gmail.com">
+                            </label>
+                            <label for="telefono" class="fill__label fill__input--telefono">
+                                    <span class="fill__label__text--telefono">Teléfono</span>
+                                    <input class="fill__input fill__input--telefono" type="text" type="tel" name="telephone"
+                                            id="telephone" placeholder="Ej: 555-55-55-55">
+                            </label>
+                            <label for="linkedin" class="fill__label fill__label--linkedin">
+                                    <span class="fill__label__text--linkedin">Linkedin</span>
+                                    <input class="fill__input fill__input--linkedin" type="text" name="linkedin" id="linkedin"
+                                            placeholder="Ej: linkedin.com/in/sally-hill">
+                            </label>
+                            <label for="github" class="fill__label fill__label--github"><span
+                                            class="fill__label__text--github">Github</span>
+                                    <input class="fill__input fill__input--github" type="text" name="github" id="github"
+                                            placeholder="Ej: @sally-hill">
+                            </label>
+                    </div>
                     <div class="border_button"></div>
             </fieldset>
             <fieldset class="form">
@@ -114,34 +115,44 @@
                         <i class="fa-solid fa-share-nodes form__legend--icon"></i>
                         Comparte
                     </legend>
-                    <i class="fa-solid fa-angle-up design__legend--arrow"></i>
+                    <i class="fa-solid fa-angle-up legend--arrow--up comparte"></i>
+                    <i class="fa-solid fa-angle-down collapse legend--arrow--down"></i>
                 </div>
 
-                <label for="create-card" class="form__label">
+                <div class="js-form collapse">
+                    <label for="create-card" class="form__label">
+                        <div class="form__box">
+                            <i class="fa-regular fa-address-card form__box--icon"></i> <input type="submit" name="create-card"
+                                id="create-card" value="Crear tarjeta" class="form__box--button" />
+                        </div>
+                    </label>
+                    <div class="CardContainer">
+                        <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
+                        <h4 class="CardContainer__url">URL de tarjeta creada</h4>
+                        <div class="container">
+                            <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit" name="compartir-twitter" id="compartir-twitter"
+                                    value="Compartir en twitter" class="container__btn"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="border_button"></div>
+                <!-- <label for="create-card" class="form__label">
                     <div class="form__box">
                         <i class="fa-regular fa-address-card form__box--icon"></i> <input type="submit" name="create-card"
                             id="create-card" value="Crear tarjeta" class="form__box--button" />
                     </div>
-                </label>
+                </label> -->
                 <!-- Hemos sacado el Comparte de Twitter del CreateHTML para que nos funcione flex en mediaquerie-->
-                <div class="CardContainer">
-                    <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
-                    <h4 class="CardContainer__url">URL de tarjeta creada</h4>
-                    <div class="container">
-                        <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit" name="compartir-twitter" id="compartir-twitter"
-                                value="Compartir en twitter" class="container__btn"></label>
-                    </div>
-                </div>
-                <div class="border_button"></div>
+               
 
             </fieldset>
         </form>
-     
     </main>
     <footer class="footer">
         <p class="footer__text">Awesome profile-cards @2022</p>
         <div class="footer__box"><img src="./assets/images/logo-adalab.png" alt="Adalab" class="footer__box--logo"></div>
     </footer>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

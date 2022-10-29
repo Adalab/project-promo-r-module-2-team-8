@@ -4,7 +4,8 @@
             <i class="fa-solid fa-share-nodes form__legend--icon"></i>
             Comparte
         </legend>
-        <i class="fa-solid fa-angle-up legend--arrow comparte"></i>
+        <i class="fa-solid fa-angle-up legend--arrow--up comparte"></i>
+        <i class="fa-solid fa-angle-down collapse legend--arrow--down"></i>
     </div>
 
     <div class="js-form collapse">
@@ -14,22 +15,23 @@
                     id="create-card" value="Crear tarjeta" class="form__box--button" />
             </div>
         </label>
+        <div class="CardContainer">
+            <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
+            <h4 class="CardContainer__url">URL de tarjeta creada</h4>
+            <div class="container">
+                <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit" name="compartir-twitter" id="compartir-twitter"
+                        value="Compartir en twitter" class="container__btn"></label>
+            </div>
+        </div>
     </div>
-    <label for="create-card" class="form__label">
+    <div class="border_button"></div>
+    <!-- <label for="create-card" class="form__label">
         <div class="form__box">
             <i class="fa-regular fa-address-card form__box--icon"></i> <input type="submit" name="create-card"
                 id="create-card" value="Crear tarjeta" class="form__box--button" />
         </div>
-    </label>
+    </label> -->
     <!-- Hemos sacado el Comparte de Twitter del CreateHTML para que nos funcione flex en mediaquerie-->
-    <div class="CardContainer">
-        <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
-        <h4 class="CardContainer__url">URL de tarjeta creada</h4>
-        <div class="container">
-            <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit" name="compartir-twitter" id="compartir-twitter"
-                    value="Compartir en twitter" class="container__btn"></label>
-        </div>
-    </div>
-    <div class="border_button"></div>
+   
 
 </fieldset>
