@@ -48,8 +48,8 @@
     &__container {
       display: flex;
       &--box {
-        // width: rem(30);
-        // height: rem(30);
+        width: rem(30);
+        height: rem(30);
         margin: rem(7) rem(74) rem(20) rem(20);
         border: solid 1px $color-input;
       }

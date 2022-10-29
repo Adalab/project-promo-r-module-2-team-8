@@ -3,27 +3,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: rem(38);
   @include tablet {
     flex-direction: column;
-    margin-right: rem(30);
     padding-bottom: rem(200);
+    margin-right: rem(30);
+    max-width: 45%;
+  }
+  @include desktop {
+    max-width: 60%;
   }
 
   &__button {
     font-family: $font-Open;
     font-size: rem(12);
     max-width: rem(80);
-    padding-top: rem(6);
-    padding-bottom: rem(6);
-    border: solid white 1px;
+    padding: rem(6);
+    border: solid white rem(1);
     border-radius: rem(15);
     background: transparent;
     margin-left: 15%;
     text-transform: uppercase;
     color: $color_gunMetal;
+    align-self: flex-start;
+    @include desktop {
+      margin-left: 27.5%;
+    }
     &--can {
-      padding-right: 5px;
+      padding-right: rem(5);
     }
   }
   &__container {
@@ -32,6 +40,9 @@
     flex-direction: column;
     justify-content: center;
     margin: 7% 10% 10% 15%;
+    @include desktop {
+      max-width: 50%;
+    }
   }
   &__name {
     font-family: $font-Mont;

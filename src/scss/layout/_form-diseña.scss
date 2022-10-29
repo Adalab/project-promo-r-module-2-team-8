@@ -1,3 +1,10 @@
+.container-form {
+  @include tablet {
+    max-width: 80%;
+    flex-grow: 2;
+  }
+}
+
 .design {
   padding-left: rem(20);
   padding-right: rem(20);
@@ -54,6 +61,10 @@
         padding-right: 15vw;
         padding-bottom: 5vw;
       }
+      @include desktop {
+        padding-right: 10vw;
+        padding-bottom: 3vw;
+      }
     }
     &__red {
       padding-right: 25vw;
@@ -64,6 +75,10 @@
         padding-right: 15vw;
         padding-bottom: 5vw;
       }
+      @include desktop {
+        padding-right: 10vw;
+        padding-bottom: 3vw;
+      }
     }
     &__grey {
       padding-right: 25vw;
@@ -73,6 +88,10 @@
       @include tablet {
         padding-right: 15vw;
         padding-bottom: 5vw;
+      }
+      @include desktop {
+        padding-right: 10vw;
+        padding-bottom: 3vw;
       }
     }
   }
