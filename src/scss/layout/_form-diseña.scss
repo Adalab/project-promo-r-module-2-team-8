@@ -1,7 +1,9 @@
 .container-form {
   @include tablet {
-    max-width: 80%;
     flex-grow: 2;
+  }
+  @include desktop {
+    flex-grow: 1;
   }
 }
 
