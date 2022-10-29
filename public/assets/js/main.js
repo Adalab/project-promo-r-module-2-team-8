@@ -5,6 +5,7 @@ const formBox= document.querySelector('.js-form'); //div de "comparte"
 
 
 
+"use strict";
 arrow.addEventListener('click', (event) =>{
     event.preventDefault();
     console.log(event.currentTarget);

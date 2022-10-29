@@ -1,3 +1,4 @@
+"use strict";
 arrow.addEventListener('click', (event) =>{
     event.preventDefault();
     console.log(event.currentTarget);
