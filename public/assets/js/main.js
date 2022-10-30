@@ -16,7 +16,7 @@ function classCollapseDesign (event) {
     formBox.classList.add('collapse');
     designBox.classList.toggle('collapse');
 }
-function arrowDesign (event){
+function arrowDesign (){
     if (arrowUp[0].classList.contains('collapse')){
         arrowUp[0].classList.remove('collapse');
         arrowDown[0].classList.add('collapse');
@@ -36,7 +36,7 @@ function classCollapseFill (event) {
     fillBox.classList.toggle('collapse');
 }
 
-function arrowFill (event){
+function arrowFill (){
     if (arrowUp[1].classList.contains('collapse')){
         arrowUp[1].classList.remove('collapse');
         arrowDown[1].classList.add('collapse');
@@ -55,7 +55,7 @@ function classCollapseForm (event) {
     formBox.classList.toggle('collapse');
 };
 
-function arrowForm (event){
+function arrowForm (){
     if (arrowUp[2].classList.contains('collapse')){
         arrowUp[2].classList.remove('collapse');
         arrowDown[2].classList.add('collapse');
