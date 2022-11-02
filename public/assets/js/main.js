@@ -3,7 +3,16 @@ const arrowDown = document.querySelectorAll('.legend--arrow--down'); //flecha pa
 const designBox = document.querySelector('.js-design'); //div de "diseña"
 const fillBox = document.querySelector('.js-fill'); //div de "rellena"
 const formBox = document.querySelector('.js-form'); //div de "comparte"
+const form = document.querySelector('.container-form'); //formulario general Create
 
+
+//constantes del preview de la tarjeta
+const nameCard = document.querySelector('.preview__name');
+const jobCard = document.querySelector('.preview__job');
+const telephoneCard = document.querySelector('.telephone');
+const emailadressCard = document.querySelector('.emailadress');
+const linkedinCard = document.querySelector('.linkedin');
+const gitHubCard = document.querySelector('.github');
 
 
 "use strict";
@@ -76,5 +85,37 @@ arrowDown[2].addEventListener('click', classCollapseForm);
 
 
 "use strict";
+
+const data = {
+    name: 'Nombre Apellido',
+    job: 'front-end unicorn',
+    emailaddress: '',
+    telephone: '',
+    linkedin: '',
+    github: '',
+};
+
+"use strict";
+
+function handleInput(event) {
+    event.preventDefault();
+    const elementName = event.target.name;
+    const value = event.target.value;
+    data[elementName] = value;
+    //renderCard();
+    console.log({ elementName, value });
+}
+function renderCard() {
+    nameCard.innerHTML = data['name'];
+    jobCard.innerHTML = data['job'];
+    telephoneCard.href = data['telephone'];
+    emailadressCard.href = data['emailadress'];
+    gitHubCard.href = data['github'];
+    linkedinCard.href = data['linkedin'];
+
+};
+
+form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
+
 
 //# sourceMappingURL=main.js.map
