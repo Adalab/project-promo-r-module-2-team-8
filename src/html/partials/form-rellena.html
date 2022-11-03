@@ -19,11 +19,17 @@
                                 placeholder="Ej: Front-end unicorn" />
                 </label>
                 <label for="profile-image" class="fill__label fill__label--profileimage">
-                        <span class="fill__label__text--profileimage">Imagen de perfil</span>
+                        <label class="fill__label__container--button" for="img-selector">Añadir imagen</label>
+
+
+                        <input type="file" name="" id="img-selector"
+                                class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse">
                         <div class="fill__label__container">
-                                <a href="" class="fill__label__container--button">Añadir imagen</a>
-                                <div class="fill__label__container--box"></div>
+
+
+                                <div class="fill__label__container--box js__profile-preview"></div>
                         </div>
+
                 </label>
                 <label for="emailaddress" class="fill__label fill__label--email"><span
                                 class="fill__label__text--email">Email</span>

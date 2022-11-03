@@ -97,25 +97,79 @@ const data = {
 
 "use strict";
 
+//lee el input y lo manda al objeto data
 function handleInput(event) {
     event.preventDefault();
     const elementName = event.target.name;
     const value = event.target.value;
     data[elementName] = value;
-    //renderCard();
+    renderCard();
     console.log({ elementName, value });
 }
+
+//función para escribir el input en el preview de la tarjeta
 function renderCard() {
-    nameCard.innerHTML = data['name'];
-    jobCard.innerHTML = data['job'];
     telephoneCard.href = data['telephone'];
     emailadressCard.href = data['emailadress'];
     gitHubCard.href = data['github'];
     linkedinCard.href = data['linkedin'];
-
+    if (data['name'] === '') {
+        nameCard.innerHTML = 'Nombre Apellido';
+    } else {
+        nameCard.innerHTML = data['name'];
+    }
+    if (data['job'] === '') {
+        jobCard.innerHTML = 'front-end unicorn';
+    } else {
+        jobCard.innerHTML = data['job'];
+    }
 };
 
 form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
 
 
+'use strict';
+
+const fr = new FileReader();
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
+
+
+/**
+ * Recoge el archivo añadido al campo de tipo "file" línea 25 rellenahtml
+ * y lo carga en nuestro objeto FileReader para que 
+ * lo convierta a algo con lo que podamos trabajar.
+ * Añade un listener al FR para que ejecute una función
+ * al tener los datos listos
+ * @param {evento} e 
+ */
+function getImage(e) {
+    const myFile = e.currentTarget.files[0];
+    fr.addEventListener('load', writeImage);
+    fr.readAsDataURL(myFile);
+}
+
+
+/**
+ * Una vez tenemos los datos listos en el FR podemos
+ * trabajar con ellos ;)
+ */
+function writeImage() {
+    /* En la propiedad `result` de nuestro FR se almacena
+     * el resultado. Ese resultado de procesar el fichero que hemos cargado
+     * podemos pasarlo como background a la imagen de perfil y a la vista previa
+     * de nuestro componente.
+     */
+    profileImage.style.backgroundImage = `url(${fr.result})`;
+    profilePreview.style.backgroundImage = `url(${fr.result})`;
+}
+
+
+/**
+ * Añadimos los listeners necesarios:
+ * - al botón visible para generar el click automático
+ * - al campo oculto para cuando cambie su value
+ */
+fileField.addEventListener('change', getImage);
 //# sourceMappingURL=main.js.map
