@@ -222,9 +222,12 @@ table {
     padding-left: 0.9375rem;
     margin-bottom: 0.625rem; }
   .preview__img {
-    text-align: center; }
-    .preview__img--file {
-      width: 100%; }
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    /* &--file {
+      width: 100%;
+    }*/ }
   .preview__icons {
     display: flex;
     flex-direction: row;

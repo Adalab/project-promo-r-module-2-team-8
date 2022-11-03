@@ -65,9 +65,11 @@
   }
   &__img {
     text-align: center;
-    &--file {
+    width: 100px;
+    height: 100px;
+   /* &--file {
       width: 100%;
-    }
+    }*/
   }
   &__icons {
     display: flex;
