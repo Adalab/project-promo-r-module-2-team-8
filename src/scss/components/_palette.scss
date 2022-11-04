@@ -1,0 +1,41 @@
+.palette-1 {
+
+        .preview__name{
+            color: $color-darkGreen;
+        }
+        .preview__job {
+            color: $color-start;
+        }
+        .preview__icons--color {
+            color: $color-darkGreen;
+            border:solid 2px $color-input;
+        }
+}
+
+.palette-2 {
+
+    .preview__name{
+        color: $color-blood;
+    }
+    .preview__job {
+        color: $color-rustyRed;
+    }
+    .preview__icons--color {
+        color: $color-blood;
+        border: solid 2px $color-tomate;
+    }
+}
+
+.palette-3 {
+
+    .preview__name{
+        color: $color-slate;
+    }
+    .preview__job {
+        color: $color-fadedOrange;
+    }
+    .preview__icons--color {
+        color: $color-slate;
+        border:solid 2px $color-lightGrey;
+    }
+}

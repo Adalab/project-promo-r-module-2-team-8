@@ -9,43 +9,44 @@
 
         <div class="js-fill collapse">
                 <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name"> Nombre
-                                completo</span>
-                        <input class="fill__input fill__input--name" type="text" name="name" id="name"
-                                placeholder="Ej: Sally Jill" />
+                                completo<span class="asterisc">*</span></span>
+                        <input class="fill__input fill__input--name js-input" type="text" name="name" id="name"
+                                placeholder="Ej: Sally Jill" required />
                 </label>
                 <label for="job-position" class="fill__label fill__label--jobposition"><span
-                                class="fill__label__text--jobposition">Puesto</span>
-                        <input class="fill__input fill__input--jobposition" type="text" name="job" id="job-position"
-                                placeholder="Ej: Front-end unicorn" />
+                                class="fill__label__text--jobposition">Puesto<span class="asterisc">*</span></span>
+                        <input class="fill__input fill__input--jobposition js-input" type="text" name="job"
+                                id="job-position" placeholder="Ej: Front-end unicorn" required />
                 </label>
                 <label for="profile-image" class="fill__label fill__label--profileimage">
                         <label class="fill__label__container--button" for="img-selector">Añadir imagen</label>
-                        <input type="file" name="" id="img-selector"
-                                class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse">
+                        <input type="file" name="photo" id="img-selector"
+                                class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse"
+                                required>
                         <div class="fill__label__container">
                                 <div class="fill__label__container--box js__profile-preview"></div>
                         </div>
 
                 </label>
                 <label for="emailaddress" class="fill__label fill__label--email"><span
-                                class="fill__label__text--email">Email</span>
-                        <input class="fill__input fill__input--email" type="email" name="emailaddress" id="emailaddress"
-                                placeholder="Ej: sally.hill@gmail.com" />
+                                class="fill__label__text--email">Email<span class="asterisc">*</span></span>
+                        <input class="fill__input fill__input--email js-input" type="email" name="emailaddress"
+                                id="emailaddress" placeholder="Ej: sally.hill@gmail.com" required />
                 </label>
                 <label for="telefono" class="fill__label fill__input--telefono">
                         <span class="fill__label__text--telefono">Teléfono</span>
-                        <input class="fill__input fill__input--telefono" type="text" type="tel" name="telephone"
-                                id="telephone" placeholder="Ej: 555-55-55-55" />
+                        <input class="fill__input fill__input--telefono js-input" type="text" type="tel"
+                                name="telephone" id="telephone" placeholder="Ej: 555-55-55-55" />
                 </label>
                 <label for="linkedin" class="fill__label fill__label--linkedin">
-                        <span class="fill__label__text--linkedin">Linkedin</span>
-                        <input class="fill__input fill__input--linkedin" type="text" name="linkedin" id="linkedin"
-                                placeholder="Ej: linkedin.com/in/sally-hill" />
+                        <span class="fill__label__text--linkedin">Linkedin<span class="asterisc">*</span></span>
+                        <input class="fill__input fill__input--linkedin js-input" type="text" name="linkedin"
+                                id="linkedin" placeholder="Ej: linkedin.com/in/sally-hill" required />
                 </label>
                 <label for="github" class="fill__label fill__label--github"><span
-                                class="fill__label__text--github">Github</span>
-                        <input class="fill__input fill__input--github" type="text" name="github" id="github"
-                                placeholder="Ej: @sally-hill" />
+                                class="fill__label__text--github">Github<span class="asterisc">*</span></span>
+                        <input class="fill__input fill__input--github js-input" type="text" name="github" id="github"
+                                placeholder="Ej: @sally-hill" required />
                 </label>
         </div>
         <div class="border_button"></div>

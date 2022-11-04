@@ -4,6 +4,11 @@ const designBox = document.querySelector('.js-design'); //div de "diseña"
 const fillBox = document.querySelector('.js-fill'); //div de "rellena"
 const formBox = document.querySelector('.js-form'); //div de "comparte"
 const form = document.querySelector('.container-form'); //formulario general Create
+// palettes
+const palette1 = document.querySelector('.js-btn-green');
+const palette2 = document.querySelector('.js-btn-red');
+const palette3 = document.querySelector('.js-btn-grey');
+const motherOfPalettes = document.querySelector('.js-mother-of-palettes');
 
 
 //constantes del preview de la tarjeta
@@ -13,6 +18,11 @@ const telephoneCard = document.querySelector('.telephone');
 const emailadressCard = document.querySelector('.emailadress');
 const linkedinCard = document.querySelector('.linkedin');
 const gitHubCard = document.querySelector('.github');
+
+
+//constantes para el botón de reset
+const resetBtn = document.querySelector('.preview__button');
+const allInput = document.querySelectorAll('.js-input');
 
 
 "use strict";
@@ -93,6 +103,7 @@ const data = {
     telephone: '',
     linkedin: '',
     github: '',
+    photo: '',
 };
 
 "use strict";
@@ -125,8 +136,24 @@ function renderCard() {
     }
 };
 
+
+
+palette1.addEventListener('click', () => {
+    motherOfPalettes.classList.remove('palette-2');
+    motherOfPalettes.classList.remove('palette-3');
+    motherOfPalettes.classList.add('palette-1');
+});
+
+
+palette2.addEventListener('click', () => {
+    motherOfPalettes.classList.remove('palette-1');
+    motherOfPalettes.classList.remove('palette-3');
+    motherOfPalettes.classList.add('palette-2');
+});
+
 form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
 
+//designBox.addEventListener('click', handlePalette1) // evento para las paletas
 
 'use strict';
 
@@ -172,4 +199,34 @@ function writeImage() {
  * - al campo oculto para cuando cambie su value
  */
 fileField.addEventListener('change', getImage);
+'use strict'
+
+function handleReset(event) {
+    event.preventDefault();
+    cleanForm();
+    cleanCard(data);
+    renderCard();
+    //cambiar la paleta
+    //cambiar la foto con profileImage (es la variable)
+}
+
+//para limpiar el formulario
+function cleanForm() {
+    for (input of allInput) {
+        input.value = '';
+    }
+}
+
+//para limpiar la tarjeta
+function cleanCard(data) {
+    data.name = 'Nombre Apellido';
+    data.job = 'front-end unicorn';
+    data.emailaddress = '';
+    data.telephone = '';
+    data.linkedin = '';
+    data.github = '';
+}
+
+//evento
+resetBtn.addEventListener('click', handleReset);
 //# sourceMappingURL=main.js.map

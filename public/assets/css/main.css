@@ -1,9 +1,9 @@
 /*
-@import 'components/code';
+
 @import 'components/links';
 @import 'layout/page';
 
-@import 'layout/footer';
+
 
 */
 * {
@@ -180,6 +180,11 @@ table {
   @media all and (min-width: 1200px) {
     .preview {
       flex-grow: 2; } }
+  .preview__align {
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem; }
   .preview__button {
     font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
@@ -188,21 +193,14 @@ table {
     border: solid white 0.0625rem;
     border-radius: 0.9375rem;
     background: transparent;
-    margin-left: 15%;
     text-transform: uppercase;
-    color: #54585a;
-    align-self: flex-start; }
-    @media all and (min-width: 1200px) {
-      .preview__button {
-        margin-left: 34%; } }
-    .preview__button--can {
-      padding-right: 0.3125rem; }
+    color: #54585a; }
   .preview__container {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 7% 10% 10% 15%;
+    margin-bottom: 10%;
     max-width: 15rem;
     max-height: 21.25rem; }
   .preview__name {
@@ -223,11 +221,11 @@ table {
     margin-bottom: 0.625rem; }
   .preview__img {
     text-align: center;
-    width: 100px;
-    height: 100px;
-    /* &--file {
-      width: 100%;
-    }*/ }
+    background-repeat: no-repeat;
+    background-image: url(../images/imagen-chica.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; }
   .preview__icons {
     display: flex;
     flex-direction: row;
@@ -517,5 +515,35 @@ table {
 
 .collapse {
   display: none; }
+
+.palette-1 .preview__name {
+  color: #114e4e; }
+
+.palette-1 .preview__job {
+  color: #438792; }
+
+.palette-1 .preview__icons--color {
+  color: #114e4e;
+  border: solid 2px #a2deaf; }
+
+.palette-2 .preview__name {
+  color: #420101; }
+
+.palette-2 .preview__job {
+  color: #bd1010; }
+
+.palette-2 .preview__icons--color {
+  color: #420101;
+  border: solid 2px #e95626; }
+
+.palette-3 .preview__name {
+  color: #3e5b65; }
+
+.palette-3 .preview__job {
+  color: #eab052; }
+
+.palette-3 .preview__icons--color {
+  color: #3e5b65;
+  border: solid 2px #a0c0cf; }
 
 /*# sourceMappingURL=main.css.map */

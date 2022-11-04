@@ -28,5 +28,21 @@ function renderCard() {
     }
 };
 
+
+
+palette1.addEventListener('click', () => {
+    motherOfPalettes.classList.remove('palette-2');
+    motherOfPalettes.classList.remove('palette-3');
+    motherOfPalettes.classList.add('palette-1');
+});
+
+
+palette2.addEventListener('click', () => {
+    motherOfPalettes.classList.remove('palette-1');
+    motherOfPalettes.classList.remove('palette-3');
+    motherOfPalettes.classList.add('palette-2');
+});
+
 form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
 
+//designBox.addEventListener('click', handlePalette1) // evento para las paletas

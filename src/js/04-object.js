@@ -7,4 +7,5 @@ const data = {
     telephone: '',
     linkedin: '',
     github: '',
+    photo: '',
 };
