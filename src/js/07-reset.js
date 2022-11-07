@@ -18,12 +18,9 @@ function cleanForm() {
 
 //para limpiar la tarjeta
 function cleanCard(data) {
-    data.name = 'Nombre Apellido';
-    data.job = 'front-end unicorn';
-    data.emailaddress = '';
-    data.telephone = '';
-    data.linkedin = '';
-    data.github = '';
+    for (let item in data) { //parece como "for (i=0; )... [i]"
+        data[item] = '';
+    }
 }
 
 //evento
