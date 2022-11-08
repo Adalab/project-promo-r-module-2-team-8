@@ -420,7 +420,9 @@ table {
         width: 1.875rem;
         height: 1.875rem;
         margin: 0.4375rem 4.625rem 1.25rem 1.25rem;
-        border: solid 1px #a2deaf; }
+        border: solid 1px #a2deaf;
+        background-position: center;
+        background-size: cover; }
       .fill__label__container--button {
         font-family: "Open Sans", sans-serif;
         background-color: #e17334;
@@ -517,7 +519,8 @@ table {
   display: none; }
 
 .palette-1 .preview__name {
-  color: #114e4e; }
+  color: #114e4e;
+  border-left: solid #438792 0.3125rem; }
 
 .palette-1 .preview__job {
   color: #438792; }
@@ -527,20 +530,24 @@ table {
   border: solid 2px #a2deaf; }
 
 .palette-2 .preview__name {
-  color: #420101; }
+  color: #420101;
+  border-left: solid #bd1010 0.3125rem; }
 
 .palette-2 .preview__job {
-  color: #bd1010; }
+  color: #bd1010;
+  border-left: solid #bd1010 0.3125rem; }
 
 .palette-2 .preview__icons--color {
   color: #420101;
   border: solid 2px #e95626; }
 
 .palette-3 .preview__name {
-  color: #3e5b65; }
+  color: #3e5b65;
+  border-left: solid #eab052 0.3125rem; }
 
 .palette-3 .preview__job {
-  color: #eab052; }
+  color: #eab052;
+  border-left: solid #eab052 0.3125rem; }
 
 .palette-3 .preview__icons--color {
   color: #3e5b65;

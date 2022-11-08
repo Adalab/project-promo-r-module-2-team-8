@@ -2,6 +2,7 @@
 
         .preview__name{
             color: $color-darkGreen;
+            border-left: solid $color-start rem(5);
         }
         .preview__job {
             color: $color-start;
@@ -16,9 +17,11 @@
 
     .preview__name{
         color: $color-blood;
+        border-left: solid $color-rustyRed rem(5);
     }
     .preview__job {
         color: $color-rustyRed;
+        border-left: solid $color-rustyRed rem(5);
     }
     .preview__icons--color {
         color: $color-blood;
@@ -30,9 +33,11 @@
 
     .preview__name{
         color: $color-slate;
+        border-left: solid $color-fadedOrange rem(5);
     }
     .preview__job {
         color: $color-fadedOrange;
+        border-left: solid $color-fadedOrange rem(5);
     }
     .preview__icons--color {
         color: $color-slate;

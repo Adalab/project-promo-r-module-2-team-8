@@ -10,7 +10,6 @@ const palette2 = document.querySelector('.js-btn-red');
 const palette3 = document.querySelector('.js-btn-grey');
 const motherOfPalettes = document.querySelector('.js-mother-of-palettes');
 
-
 //constantes del preview de la tarjeta
 const nameCard = document.querySelector('.preview__name');
 const jobCard = document.querySelector('.preview__job');
@@ -18,7 +17,6 @@ const telephoneCard = document.querySelector('.telephone');
 const emailadressCard = document.querySelector('.emailadress');
 const linkedinCard = document.querySelector('.linkedin');
 const gitHubCard = document.querySelector('.github');
-
 
 //constantes para el botón de reset
 const resetBtn = document.querySelector('.preview__button');
@@ -137,18 +135,28 @@ function renderCard() {
 };
 
 
-
-palette1.addEventListener('click', () => {
+function cleanPalette() {
+    motherOfPalettes.classList.remove('palette-1');
     motherOfPalettes.classList.remove('palette-2');
     motherOfPalettes.classList.remove('palette-3');
+}
+
+// cambio de paleta cuando clicko
+
+palette1.addEventListener('click', () => {
+    cleanPalette();
     motherOfPalettes.classList.add('palette-1');
 });
 
 
 palette2.addEventListener('click', () => {
-    motherOfPalettes.classList.remove('palette-1');
-    motherOfPalettes.classList.remove('palette-3');
+    cleanPalette();
     motherOfPalettes.classList.add('palette-2');
+});
+
+palette3.addEventListener('click', () => {
+    cleanPalette();
+    motherOfPalettes.classList.add('palette-3');
 });
 
 form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
@@ -190,6 +198,7 @@ function writeImage() {
      */
     profileImage.style.backgroundImage = `url(${fr.result})`;
     profilePreview.style.backgroundImage = `url(${fr.result})`;
+    data.photo = fr.result;
 }
 
 
@@ -206,24 +215,28 @@ function handleReset(event) {
     cleanForm();
     cleanCard(data);
     renderCard();
-    //cambiar la paleta
-    //cambiar la foto con profileImage (es la variable)
+    cleanPalette();
+    motherOfPalettes.classList.add('palette-1')
+    profileImage.style.backgroundImage = '';
+    profilePreview.style.backgroundImage = '';
+    selectCheck()
 }
-
 //para limpiar el formulario
 function cleanForm() {
     for (input of allInput) {
         input.value = '';
     }
 }
-
 //para limpiar la tarjeta
 function cleanCard(data) {
     for (let item in data) { //parece como "for (i=0; )... [i]"
         data[item] = '';
     }
 }
-
+//para dejar marcada la paleta 1
+function selectCheck() {
+    palette1.checked = true;
+}
 //evento
 resetBtn.addEventListener('click', handleReset);
 //# sourceMappingURL=main.js.map

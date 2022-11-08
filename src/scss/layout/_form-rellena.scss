@@ -50,6 +50,8 @@
         height: rem(30);
         margin: rem(7) rem(74) rem(20) rem(20);
         border: solid 1px $color-input;
+        background-position: center;
+        background-size: cover;        
       }
       &--button {
         font-family: $font-Open;

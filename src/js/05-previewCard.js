@@ -29,18 +29,28 @@ function renderCard() {
 };
 
 
-
-palette1.addEventListener('click', () => {
+function cleanPalette() {
+    motherOfPalettes.classList.remove('palette-1');
     motherOfPalettes.classList.remove('palette-2');
     motherOfPalettes.classList.remove('palette-3');
+}
+
+// cambio de paleta cuando clicko
+
+palette1.addEventListener('click', () => {
+    cleanPalette();
     motherOfPalettes.classList.add('palette-1');
 });
 
 
 palette2.addEventListener('click', () => {
-    motherOfPalettes.classList.remove('palette-1');
-    motherOfPalettes.classList.remove('palette-3');
+    cleanPalette();
     motherOfPalettes.classList.add('palette-2');
+});
+
+palette3.addEventListener('click', () => {
+    cleanPalette();
+    motherOfPalettes.classList.add('palette-3');
 });
 
 form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
