@@ -36,6 +36,7 @@ function cleanPalette() {
 }
 
 // cambio de paleta cuando clicko
+//se puede poner un solo evento? con currentTarget
 
 palette1.addEventListener('click', () => {
     cleanPalette();
