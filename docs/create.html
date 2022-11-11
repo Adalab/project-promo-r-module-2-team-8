@@ -17,20 +17,26 @@
         <img class="header__logo" src="./assets/images/logo-awesome.svg" alt="logo">
     </header>
     <main class="mainCreate">
-        <section class="preview">
-            <button class="preview__button"><i class="fa-regular fa-trash-can preview__button--can"></i>Reset</button>
-            <article class="preview__container">
-                <h2 class="preview__name">Nombre apellido</h2>
-                <h3 class="preview__job">Front-end developer</h3>
-                <div class="preview__img"> <img class="preview__img--file" src="./assets/images/imagen-chica.png" alt="">
-                </div>
-                <ul class="preview__icons">
-                    <li><a href=""><i class="fa-solid fa-mobile-screen-button preview__icons--color"></i></a></li>
-                    <li><a href=""><i class="fa-regular fa-envelope preview__icons--color"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-github-alt preview__icons--color"></i></a></li>
-                </ul>
-            </article>
+        <section class="preview ">
+            <div class="preview__align">
+
+                <button class="preview__button"><i class="fa-regular fa-trash-can preview__button--can"></i> Reset</button>
+                <article class="preview__container js-mother-of-palettes">
+                    <h2 class="preview__name">Nombre apellido</h2>
+                    <h3 class="preview__job">Front-end unicorn</h3>
+                    <div class="preview__img js__profile-image">
+                    </div>
+                    <ul class="preview__icons">
+                        <li><a href="" class="telephone"><i
+                                    class="fa-solid fa-mobile-screen-button preview__icons--color"></i></a>
+                        </li>
+                        <li><a href="" class="emailadress"><i class="fa-regular fa-envelope preview__icons--color"></i></a></li>
+                        <li><a href="" class="linkedin"><i class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
+                        <li><a href="" class="github"><i class="fa-brands fa-github-alt preview__icons--color"></i></a></li>
+                    </ul>
+                </article>
+            </div>
+
         </section>
         <form class="container-form" action="">
             <fieldset class="design">
@@ -44,15 +50,15 @@
                     <span class="design__palette__span"> Colores</span>
                     <div class="design__palette__radio">
                         <label for="green" class="design__palette__radio--colors">
-                            <input type="radio" name="green" id="green">
+                            <input class="js-btn-green" type="radio" name="color" id="green" checked>
                             <div class="design__palette__green"></div>
                         </label>
                         <label for="red" class="design__palette__radio--colors">
-                            <input type="radio" name="red" id="red">
+                            <input class="js-btn-red" type="radio" name="color" id="red">
                             <div class="design__palette__red"> </div>
                         </label>
                         <label for="grey" class="design__palette__radio--colors">
-                            <input type="radio" name="grey" id="grey">
+                            <input class="js-btn-grey" type="radio" name="color" id="grey">
                             <div class="design__palette__grey"></div>
                         </label>
                     </div>
@@ -62,50 +68,55 @@
             </fieldset>
             <fieldset class="fill">
                     <div class="fill__title">
-                            <legend class="fill__legend"><i class="fa-regular fa-keyboard fill__legend--icon"></i>
-                                    Rellena </legend>
+                            <legend class="fill__legend">
+                                    <i class="fa-regular fa-keyboard fill__legend--icon"></i> Rellena
+                            </legend>
                             <i class="fa-solid fa-angle-up collapse legend--arrow--up"></i>
-                            <i class="fa-solid fa-angle-down  legend--arrow--down"></i>
+                            <i class="fa-solid fa-angle-down legend--arrow--down"></i>
                     </div>
-
 
                     <div class="js-fill collapse">
                             <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name"> Nombre
-                                            completo</span>
-                                    <input class="fill__input fill__input--name" type="text" name="name" id="name"
-                                            placeholder="Ej: Sally Jill">
+                                            completo<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--name js-input" type="text" name="name" id="name"
+                                            placeholder="Ej: Sally Jill" required />
                             </label>
                             <label for="job-position" class="fill__label fill__label--jobposition"><span
-                                            class="fill__label__text--jobposition">Puesto</span>
-                                    <input class="fill__input fill__input--jobposition" type="text" name="job-position"
-                                            id="job-position" placeholder="Ej: Front-end unicorn">
+                                            class="fill__label__text--jobposition">Puesto<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--jobposition js-input" type="text" name="job"
+                                            id="job-position" placeholder="Ej: Front-end unicorn" required />
                             </label>
                             <label for="profile-image" class="fill__label fill__label--profileimage">
-                                    <span class="fill__label__text--profileimage">Imagen de perfil</span>
                                     <div class="fill__label__container">
-                                            <a href="" class="fill__label__container--button">Añadir imagen</a>
-                                            <div class="fill__label__container--box"></div>
+                                            <label class="fill__label__container--button" for="img-selector">Añadir imagen</label>
+                                            <input type="file" name="photo" id="img-selector"
+                                                    class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse"
+                                                    required>
+
+                                            <div class="fill__label__container--box js__profile-preview"></div>
                                     </div>
+
+
                             </label>
                             <label for="emailaddress" class="fill__label fill__label--email"><span
-                                            class="fill__label__text--email">Email</span>
-                                    <input class="fill__input fill__input--email" type="email" name="emailaddress" id="emailaddress"
-                                            placeholder="Ej: sally.hill@gmail.com">
+                                            class="fill__label__text--email">Email<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--email js-input" type="email" name="emailaddress"
+                                            id="emailaddress" placeholder="Ej: sally.hill@gmail.com" required />
                             </label>
                             <label for="telefono" class="fill__label fill__input--telefono">
                                     <span class="fill__label__text--telefono">Teléfono</span>
-                                    <input class="fill__input fill__input--telefono" type="text" type="tel" name="telephone"
-                                            id="telephone" placeholder="Ej: 555-55-55-55">
+                                    <input class="fill__input fill__input--telefono js-input" type="text" type="tel"
+                                            name="telephone" id="telephone" placeholder="Ej: 555-55-55-55" />
                             </label>
                             <label for="linkedin" class="fill__label fill__label--linkedin">
-                                    <span class="fill__label__text--linkedin">Linkedin</span>
-                                    <input class="fill__input fill__input--linkedin" type="text" name="linkedin" id="linkedin"
-                                            placeholder="Ej: linkedin.com/in/sally-hill">
+                                    <span class="fill__label__text--linkedin">Linkedin<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--linkedin js-input" type="text" name="linkedin"
+                                            id="linkedin" placeholder="Ej: linkedin.com/in/sally-hill" required />
                             </label>
                             <label for="github" class="fill__label fill__label--github"><span
-                                            class="fill__label__text--github">Github</span>
-                                    <input class="fill__input fill__input--github" type="text" name="github" id="github"
-                                            placeholder="Ej: @sally-hill">
+                                            class="fill__label__text--github">Github<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--github js-input" type="text" name="github" id="github"
+                                            placeholder="Ej: @sally-hill" required />
                             </label>
                     </div>
                     <div class="border_button"></div>
