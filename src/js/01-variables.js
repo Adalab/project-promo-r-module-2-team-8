@@ -21,3 +21,8 @@ const gitHubCard = document.querySelector('.github');
 //constantes para el botón de reset
 const resetBtn = document.querySelector('.preview__button');
 const allInput = document.querySelectorAll('.js-input');
+
+//constantes para la sección comparte
+const submitBtn = document.querySelector('.js_button_submit');
+const cardContainer = document.querySelector('.js_card_container');
+const urlCreateCard = document.querySelector('.js_card_container');

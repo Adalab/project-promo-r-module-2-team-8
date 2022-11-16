@@ -22,6 +22,10 @@ const gitHubCard = document.querySelector('.github');
 const resetBtn = document.querySelector('.preview__button');
 const allInput = document.querySelectorAll('.js-input');
 
+//constantes para la sección comparte
+const submitBtn = document.querySelector('.js_button_submit');
+const cardContainer = document.querySelector('.js_card_container');
+const urlCreateCard = document.querySelector('.js_card_container');
 
 "use strict";
 //funciones para "diseña"
@@ -94,10 +98,10 @@ arrowDown[2].addEventListener('click', classCollapseForm);
 
 "use strict";
 
-const data = {
+let data = {
     name: 'Nombre Apellido',
     job: 'front-end unicorn',
-    emailaddress: '',
+    email: '',
     telephone: '',
     linkedin: '',
     github: '',
@@ -113,8 +117,10 @@ function handleInput(event) {
     const value = event.target.value;
     data[elementName] = value;
     renderCard();
+    // saveInLocalStorage(data);
     console.log({ elementName, value });
 }
+
 
 //función para escribir el input en el preview de la tarjeta
 function renderCard() {
@@ -142,21 +148,25 @@ function cleanPalette() {
 }
 
 // cambio de paleta cuando clicko
+//se puede poner un solo evento? con currentTarget
 
 palette1.addEventListener('click', () => {
     cleanPalette();
     motherOfPalettes.classList.add('palette-1');
+    data.palette = 1;
 });
 
 
 palette2.addEventListener('click', () => {
     cleanPalette();
     motherOfPalettes.classList.add('palette-2');
+    data.palette = 2;
 });
 
 palette3.addEventListener('click', () => {
     cleanPalette();
     motherOfPalettes.classList.add('palette-3');
+    data.palette = 3;
 });
 
 form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
@@ -226,6 +236,7 @@ function cleanForm() {
     for (input of allInput) {
         input.value = '';
     }
+    localStorage.removeItem('dataFromForm');
 }
 //para limpiar la tarjeta
 function cleanCard(data) {
@@ -239,4 +250,40 @@ function selectCheck() {
 }
 //evento
 resetBtn.addEventListener('click', handleReset);
+'use strict';
+
+ function handleCreateCard(event){
+  event.preventDefault();
+  console.log('holis');
+  fetch('https://awesome-profile-cards.herokuapp.com/card', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+
+    .then((responseJson) => {
+      console.log(responseJson);
+      if (responseJson.success) {
+        cardContainer.classList.remove('collapse');
+        urlCreateCard.innerHTML = `${responseJson.cardURL}`;
+      } else {
+        cardContainer.classList.remove('collapse');
+        urlCreateCard.innerHTML = `No has rellenado todos los campos`;
+      }
+    });
+};
+submitBtn.addEventListener('click', handleCreateCard);
+// 'use strict';
+
+// function saveInLocalStorage(data){
+//     localStorage.setItem('dataFromForm', JSON.stringify(data));
+// }
+
+// data = JSON.parse(localStorage.getItem('dataFromform'));
+
+
+
 //# sourceMappingURL=main.js.map

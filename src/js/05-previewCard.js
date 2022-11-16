@@ -7,8 +7,10 @@ function handleInput(event) {
     const value = event.target.value;
     data[elementName] = value;
     renderCard();
+    // saveInLocalStorage(data);
     console.log({ elementName, value });
 }
+
 
 //función para escribir el input en el preview de la tarjeta
 function renderCard() {
@@ -41,17 +43,20 @@ function cleanPalette() {
 palette1.addEventListener('click', () => {
     cleanPalette();
     motherOfPalettes.classList.add('palette-1');
+    data.palette = 1;
 });
 
 
 palette2.addEventListener('click', () => {
     cleanPalette();
     motherOfPalettes.classList.add('palette-2');
+    data.palette = 2;
 });
 
 palette3.addEventListener('click', () => {
     cleanPalette();
     motherOfPalettes.classList.add('palette-3');
+    data.palette = 3;
 });
 
 form.addEventListener('input', handleInput)//evento de escucha de los input del formulario

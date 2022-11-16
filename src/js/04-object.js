@@ -1,9 +1,9 @@
 "use strict";
 
-const data = {
+let data = {
     name: 'Nombre Apellido',
     job: 'front-end unicorn',
-    emailaddress: '',
+    email: '',
     telephone: '',
     linkedin: '',
     github: '',

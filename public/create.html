@@ -50,15 +50,15 @@
                     <span class="design__palette__span"> Colores</span>
                     <div class="design__palette__radio">
                         <label for="green" class="design__palette__radio--colors">
-                            <input class="js-btn-green" type="radio" name="color" id="green" checked>
+                            <input class="js-btn-green" type="radio" name="palette" id="green" checked value="1">
                             <div class="design__palette__green"></div>
                         </label>
                         <label for="red" class="design__palette__radio--colors">
-                            <input class="js-btn-red" type="radio" name="color" id="red">
+                            <input class="js-btn-red" type="radio" name="palette" id="red" value="2">
                             <div class="design__palette__red"> </div>
                         </label>
                         <label for="grey" class="design__palette__radio--colors">
-                            <input class="js-btn-grey" type="radio" name="color" id="grey">
+                            <input class="js-btn-grey" type="radio" name="palette" id="grey" value="3">
                             <div class="design__palette__grey"></div>
                         </label>
                     </div>
@@ -100,8 +100,8 @@
                             </label>
                             <label for="emailaddress" class="fill__label fill__label--email"><span
                                             class="fill__label__text--email">Email<span class="asterisc">*</span></span>
-                                    <input class="fill__input fill__input--email js-input" type="email" name="emailaddress"
-                                            id="emailaddress" placeholder="Ej: sally.hill@gmail.com" required />
+                                    <input class="fill__input fill__input--email js-input" type="email" name="email"
+                                            id="email" placeholder="Ej: sally.hill@gmail.com" required />
                             </label>
                             <label for="telefono" class="fill__label fill__input--telefono">
                                     <span class="fill__label__text--telefono">Teléfono</span>
@@ -134,13 +134,15 @@
                 <div class="js-form collapse">
                     <label for="create-card" class="form__label">
                         <div class="form__box">
-                            <i class="fa-regular fa-address-card form__box--icon"></i> <input type="submit" name="create-card"
-                                id="create-card" value="Crear tarjeta" class="form__box--button" />
+                            <i class="fa-regular fa-address-card form__box--icon"></i> 
+                            <button class="form__box--button js_button_submit">Crear tarjeta</button>
+                            <!-- <input type="submit" name="create-card"
+                                id="create-card" value="Crear tarjeta" class="form__box--button js_button_submit" /> -->
                         </div>
                     </label>
-                    <div class="CardContainer">
+                    <div class="CardContainer collapse js_card_container">
                         <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
-                        <h4 class="CardContainer__url">URL de tarjeta creada</h4>
+                        <h4 class="CardContainer__url js_url"></h4>
                         <div class="container">
                             <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit"
                                     name="compartir-twitter" id="compartir-twitter" value="Compartir en twitter"

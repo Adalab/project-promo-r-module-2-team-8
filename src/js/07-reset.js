@@ -16,6 +16,7 @@ function cleanForm() {
     for (input of allInput) {
         input.value = '';
     }
+    localStorage.removeItem('dataFromForm');
 }
 //para limpiar la tarjeta
 function cleanCard(data) {
