@@ -1,8 +1,7 @@
 'use strict';
 
- function handleCreateCard(event){
+function handleCreateCard(event) {
   event.preventDefault();
-  console.log('holis');
   fetch('https://awesome-profile-cards.herokuapp.com/card', {
     method: 'POST',
     body: JSON.stringify(data),
@@ -13,14 +12,14 @@
     .then((response) => response.json())
 
     .then((responseJson) => {
-      console.log(responseJson);
       if (responseJson.success) {
         markSuccessBtn();
         cardContainer.classList.remove('collapse');
         cardShareTitle.innerHTML = 'La tarjeta ha sido creada:';
         urlCreateCard.innerHTML = responseJson.cardURL;
         containerTwitter.classList.remove('collapse');
-        twitterShare.href=`https://twitter.com/intent/tweet?text=Esta%20es%20mi%20tarjeta:&url=${responseJson.cardURL}`;
+
+        twitterShare.href = `https://twitter.com/intent/tweet?text=Esta%20es%20mi%20tarjeta:&url=${responseJson.cardURL}`;
       } else {
         cardContainer.classList.remove('collapse');
         urlCreateCard.innerHTML = `No has rellenado todos los campos`;

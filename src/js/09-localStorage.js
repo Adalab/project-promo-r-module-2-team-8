@@ -20,5 +20,4 @@ function writeInput() {
 if (JSON.parse(localStorage.getItem('dataFromForm'))) {
     renderCard();
     writeInput();
-    
   } 

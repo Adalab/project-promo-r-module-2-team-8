@@ -43,6 +43,7 @@ const inputPhone = document.querySelector('.js_input_phone');
 const inputLinkedin = document.querySelector('.js_input_linkedin');
 const inputGithub = document.querySelector('.js_input_github');
 
+
 "use strict";
 //funciones para "diseña"
 
@@ -112,7 +113,7 @@ arrowDown[1].addEventListener('click', classCollapseFill);
 arrowDown[2].addEventListener('click', classCollapseForm);
 
 
-"use strict";
+'use strict';
 
 let data = {
     name: 'Nombre Apellido',
@@ -125,7 +126,7 @@ let data = {
     palette: 1
 };
 
-"use strict";
+'use strict';
 
 //lee el input y lo manda al objeto data
 function handleInput(event) {
@@ -138,55 +139,53 @@ function handleInput(event) {
     console.log({ elementName, value });
 }
 
-
 //función para escribir el input en el preview de la tarjeta
 function renderCard() {
-    telephoneCard.href = data['telephone'];
-    emailadressCard.href = data['emailadress'];
-    gitHubCard.href = data['github'];
-    linkedinCard.href = data['linkedin'];
-    if (data['name'] === '') {
-        nameCard.innerHTML = 'Nombre Apellido';
-    } else {
-        nameCard.innerHTML = data['name'];
-    }
-    if (data['job'] === '') {
-        jobCard.innerHTML = 'front-end unicorn';
-    } else {
-        jobCard.innerHTML = data['job'];
-    }
-};
-
+  telephoneCard.href = data['phone'];
+  emailadressCard.href = data['emailadress'];
+  gitHubCard.href = data['github'];
+  linkedinCard.href = data['linkedin'];
+  if (data['name'] === '') {
+    nameCard.innerHTML = 'Nombre Apellido';
+  } else {
+    nameCard.innerHTML = data['name'];
+  }
+  if (data['job'] === '') {
+    jobCard.innerHTML = 'front-end unicorn';
+  } else {
+    jobCard.innerHTML = data['job'];
+  }
+}
 
 function cleanPalette() {
-    motherOfPalettes.classList.remove('palette-1');
-    motherOfPalettes.classList.remove('palette-2');
-    motherOfPalettes.classList.remove('palette-3');
+  motherOfPalettes.classList.remove('palette-1');
+  motherOfPalettes.classList.remove('palette-2');
+  motherOfPalettes.classList.remove('palette-3');
 }
 
 // cambio de paleta cuando clicko
 //se puede poner un solo evento? con currentTarget
 
-palette1.addEventListener('click', () => {
-    cleanPalette();
-    motherOfPalettes.classList.add('palette-1');
-    data.palette = 1;
+palette1.addEventListener('click', (event) => {
+  cleanPalette();
+  motherOfPalettes.classList.add('palette-1');
+  data.palette = 1;
+  console.log(event.currentTarget);
 });
 
-
 palette2.addEventListener('click', () => {
-    cleanPalette();
-    motherOfPalettes.classList.add('palette-2');
-    data.palette = 2;
+  cleanPalette();
+  motherOfPalettes.classList.add('palette-2');
+  data.palette = 2;
 });
 
 palette3.addEventListener('click', () => {
-    cleanPalette();
-    motherOfPalettes.classList.add('palette-3');
-    data.palette = 3;
+  cleanPalette();
+  motherOfPalettes.classList.add('palette-3');
+  data.palette = 3;
 });
 
-form.addEventListener('input', handleInput)//evento de escucha de los input del formulario
+form.addEventListener('input', handleInput); //evento de escucha de los input del formulario
 
 //designBox.addEventListener('click', handlePalette1) // evento para las paletas
 
@@ -269,9 +268,8 @@ function selectCheck() {
 resetBtn.addEventListener('click', handleReset);
 'use strict';
 
- function handleCreateCard(event){
+function handleCreateCard(event) {
   event.preventDefault();
-  console.log('holis');
   fetch('https://awesome-profile-cards.herokuapp.com/card', {
     method: 'POST',
     body: JSON.stringify(data),
@@ -282,14 +280,14 @@ resetBtn.addEventListener('click', handleReset);
     .then((response) => response.json())
 
     .then((responseJson) => {
-      console.log(responseJson);
       if (responseJson.success) {
         markSuccessBtn();
         cardContainer.classList.remove('collapse');
         cardShareTitle.innerHTML = 'La tarjeta ha sido creada:';
         urlCreateCard.innerHTML = responseJson.cardURL;
         containerTwitter.classList.remove('collapse');
-        twitterShare.href=`https://twitter.com/intent/tweet?text=Esta%20es%20mi%20tarjeta:&url=${responseJson.cardURL}`;
+
+        twitterShare.href = `https://twitter.com/intent/tweet?text=Esta%20es%20mi%20tarjeta:&url=${responseJson.cardURL}`;
       } else {
         cardContainer.classList.remove('collapse');
         urlCreateCard.innerHTML = `No has rellenado todos los campos`;
@@ -303,6 +301,7 @@ function markSuccessBtn(){
   submitBtn.classList.add('successBtn');
   boxSubmitBtn.classList.add('successBtn');
 }
+
 'use strict';
 
 function saveInLocalStorage(data){
@@ -325,6 +324,6 @@ function writeInput() {
 if (JSON.parse(localStorage.getItem('dataFromForm'))) {
     renderCard();
     writeInput();
-    
   } 
+
 //# sourceMappingURL=main.js.map
