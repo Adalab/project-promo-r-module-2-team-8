@@ -4,8 +4,9 @@ let data = {
     name: 'Nombre Apellido',
     job: 'front-end unicorn',
     email: '',
-    telephone: '',
+    phone: '',
     linkedin: '',
     github: '',
     photo: '',
+    palette: 1
 };

@@ -7,7 +7,7 @@ function handleInput(event) {
     const value = event.target.value;
     data[elementName] = value;
     renderCard();
-    // saveInLocalStorage(data);
+    saveInLocalStorage(data);
     console.log({ elementName, value });
 }
 

@@ -25,7 +25,23 @@ const allInput = document.querySelectorAll('.js-input');
 //constantes para la sección comparte
 const submitBtn = document.querySelector('.js_button_submit');
 const cardContainer = document.querySelector('.js_card_container');
-const urlCreateCard = document.querySelector('.js_card_container');
+const urlCreateCard = document.querySelector('.js_url');
+const boxSubmitBtn = document.querySelector('.js_form_box');
+const cardShareTitle = document.querySelector('.js_card_title');
+
+//compartir en twitter
+const twitterShare = document.querySelector('.js_twitter');
+const containerTwitter = document.querySelector('.js_container__twitter');
+
+//inputs del form para escribir en el localStorage
+
+const inputName = document.querySelector('.js_input_name');
+const inputJob = document.querySelector('.js_input_job');
+const inputPhoto = document.querySelector('.js_input_photo');
+const inputEmail = document.querySelector('.js_input_email');
+const inputPhone = document.querySelector('.js_input_phone');
+const inputLinkedin = document.querySelector('.js_input_linkedin');
+const inputGithub = document.querySelector('.js_input_github');
 
 "use strict";
 //funciones para "diseña"
@@ -102,10 +118,11 @@ let data = {
     name: 'Nombre Apellido',
     job: 'front-end unicorn',
     email: '',
-    telephone: '',
+    phone: '',
     linkedin: '',
     github: '',
     photo: '',
+    palette: 1
 };
 
 "use strict";
@@ -117,7 +134,7 @@ function handleInput(event) {
     const value = event.target.value;
     data[elementName] = value;
     renderCard();
-    // saveInLocalStorage(data);
+    saveInLocalStorage(data);
     console.log({ elementName, value });
 }
 
@@ -267,23 +284,47 @@ resetBtn.addEventListener('click', handleReset);
     .then((responseJson) => {
       console.log(responseJson);
       if (responseJson.success) {
+        markSuccessBtn();
         cardContainer.classList.remove('collapse');
-        urlCreateCard.innerHTML = `${responseJson.cardURL}`;
+        cardShareTitle.innerHTML = 'La tarjeta ha sido creada:';
+        urlCreateCard.innerHTML = responseJson.cardURL;
+        containerTwitter.classList.remove('collapse');
+        twitterShare.href=`https://twitter.com/intent/tweet?text=Esta%20es%20mi%20tarjeta:&url=${responseJson.cardURL}`;
       } else {
         cardContainer.classList.remove('collapse');
         urlCreateCard.innerHTML = `No has rellenado todos los campos`;
       }
     });
+
 };
 submitBtn.addEventListener('click', handleCreateCard);
-// 'use strict';
 
-// function saveInLocalStorage(data){
-//     localStorage.setItem('dataFromForm', JSON.stringify(data));
-// }
+function markSuccessBtn(){
+  submitBtn.classList.add('successBtn');
+  boxSubmitBtn.classList.add('successBtn');
+}
+'use strict';
 
-// data = JSON.parse(localStorage.getItem('dataFromform'));
+function saveInLocalStorage(data){
+    localStorage.setItem('dataFromForm', JSON.stringify(data));
+}
 
-
-
+function writeInput() {
+    data = JSON.parse(localStorage.getItem('dataFromForm'));
+  inputName.value = data.name;
+  inputJob.value = data.job;
+  if (data.photo) {
+    profileImage.style.backgroundImage = `url(${data.photo})`;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
+  }
+  inputPhone.value = data.phone;
+  inputEmail.value = data.email;
+  inputLinkedin.value = data.linkedin;
+  inputGithub.value = data.github;
+}
+if (JSON.parse(localStorage.getItem('dataFromForm'))) {
+    renderCard();
+    writeInput();
+    
+  } 
 //# sourceMappingURL=main.js.map

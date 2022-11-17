@@ -15,12 +15,22 @@
     .then((responseJson) => {
       console.log(responseJson);
       if (responseJson.success) {
+        markSuccessBtn();
         cardContainer.classList.remove('collapse');
-        urlCreateCard.innerHTML = `${responseJson.cardURL}`;
+        cardShareTitle.innerHTML = 'La tarjeta ha sido creada:';
+        urlCreateCard.innerHTML = responseJson.cardURL;
+        containerTwitter.classList.remove('collapse');
+        twitterShare.href=`https://twitter.com/intent/tweet?text=Esta%20es%20mi%20tarjeta:&url=${responseJson.cardURL}`;
       } else {
         cardContainer.classList.remove('collapse');
         urlCreateCard.innerHTML = `No has rellenado todos los campos`;
       }
     });
+
 };
 submitBtn.addEventListener('click', handleCreateCard);
+
+function markSuccessBtn(){
+  submitBtn.classList.add('successBtn');
+  boxSubmitBtn.classList.add('successBtn');
+}
