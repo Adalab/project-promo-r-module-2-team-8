@@ -135,7 +135,6 @@ function handleInput(event) {
   data[elementName] = value;
   renderCard();
   saveInLocalStorage(data);
-  console.log({ elementName, value });
 }
 
 //función para escribir el input en el preview de la tarjeta
@@ -165,10 +164,11 @@ function cleanPalette() {
 // cambio de paleta cuando clicko
 //se puede poner un solo evento? con currentTarget
 
-palette1.addEventListener('click', () => {
+palette1.addEventListener('click', (event) => {
   cleanPalette();
   motherOfPalettes.classList.add('palette-1');
   data.palette = 1;
+  console.log(event.currentTarget);
 });
 
 palette2.addEventListener('click', () => {
@@ -278,17 +278,18 @@ function handleCreateCard(event) {
     .then((response) => response.json())
 
     .then((responseJson) => {
-      console.log(responseJson);
       if (responseJson.success) {
         cardContainer.classList.remove('collapse');
+        markSuccessBtn();
         cardShareTitle.innerHTML = 'La tarjeta ha sido creada:';
         urlCreateCard.innerHTML = responseJson.cardURL;
         containerTwitter.classList.remove('collapse');
+
+        twitterShare.href = `https://twitter.com/intent/tweet?text=Esta%20es%20mi%20tarjeta:&url=${responseJson.cardURL}`;
       } else {
         cardContainer.classList.remove('collapse');
         urlCreateCard.innerHTML = `No has rellenado todos los campos`;
       }
-      markSuccessBtn();
     });
 }
 submitBtn.addEventListener('click', handleCreateCard);

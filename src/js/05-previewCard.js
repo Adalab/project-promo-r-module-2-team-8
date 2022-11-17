@@ -8,7 +8,6 @@ function handleInput(event) {
   data[elementName] = value;
   renderCard();
   saveInLocalStorage(data);
-  console.log({ elementName, value });
 }
 
 //función para escribir el input en el preview de la tarjeta
@@ -38,10 +37,11 @@ function cleanPalette() {
 // cambio de paleta cuando clicko
 //se puede poner un solo evento? con currentTarget
 
-palette1.addEventListener('click', () => {
+palette1.addEventListener('click', (event) => {
   cleanPalette();
   motherOfPalettes.classList.add('palette-1');
   data.palette = 1;
+  console.log(event.currentTarget);
 });
 
 palette2.addEventListener('click', () => {

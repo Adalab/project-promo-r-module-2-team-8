@@ -20,8 +20,7 @@
         <section class="preview ">
             <div class="preview__align">
 
-                <button class="preview__button"><i class="fa-regular fa-trash-can preview__button--can"></i>
-                    Reset</button>
+                <button class="preview__button"><i class="fa-regular fa-trash-can preview__button--can"></i> Reset</button>
                 <article class="preview__container js-mother-of-palettes">
                     <h2 class="preview__name">Nombre apellido</h2>
                     <h3 class="preview__job">Front-end unicorn</h3>
@@ -31,12 +30,9 @@
                         <li><a href="" class="telephone"><i
                                     class="fa-solid fa-mobile-screen-button preview__icons--color"></i></a>
                         </li>
-                        <li><a href="" class="emailadress"><i
-                                    class="fa-regular fa-envelope preview__icons--color"></i></a></li>
-                        <li><a href="" class="linkedin"><i
-                                    class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
-                        <li><a href="" class="github"><i class="fa-brands fa-github-alt preview__icons--color"></i></a>
-                        </li>
+                        <li><a href="" class="emailadress"><i class="fa-regular fa-envelope preview__icons--color"></i></a></li>
+                        <li><a href="" class="linkedin"><i class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
+                        <li><a href="" class="github"><i class="fa-brands fa-github-alt preview__icons--color"></i></a></li>
                     </ul>
                 </article>
             </div>
@@ -45,8 +41,7 @@
         <form class="container-form" action="">
             <fieldset class="design">
                 <div class="design__title">
-                    <legend class="design__legend"><i
-                            class="fa-regular fa-object-ungroup design__legend--icon"></i>Diseña</legend>
+                    <legend class="design__legend"><i class="fa-regular fa-object-ungroup design__legend--icon"></i>Diseña</legend>
                     <i class="fa-solid fa-angle-up legend--arrow--up"></i><i
                         class="fa-solid fa-angle-down collapse legend--arrow--down"></i>
 
@@ -55,15 +50,15 @@
                     <span class="design__palette__span"> Colores</span>
                     <div class="design__palette__radio">
                         <label for="green" class="design__palette__radio--colors">
-                            <input class="js-btn-green" type="radio" name="color" id="green" checked>
+                            <input class="js-btn-green" type="radio" name="palette" id="1" checked value="1">
                             <div class="design__palette__green"></div>
                         </label>
                         <label for="red" class="design__palette__radio--colors">
-                            <input class="js-btn-red" type="radio" name="color" id="red">
+                            <input class="js-btn-red" type="radio" name="palette" id="2" value="2">
                             <div class="design__palette__red"> </div>
                         </label>
                         <label for="grey" class="design__palette__radio--colors">
-                            <input class="js-btn-grey" type="radio" name="color" id="grey">
+                            <input class="js-btn-grey" type="radio" name="palette" id="3" value="3">
                             <div class="design__palette__grey"></div>
                         </label>
                     </div>
@@ -72,60 +67,59 @@
 
             </fieldset>
             <fieldset class="fill">
-                <div class="fill__title">
-                    <legend class="fill__legend">
-                        <i class="fa-regular fa-keyboard fill__legend--icon"></i> Rellena
-                    </legend>
-                    <i class="fa-solid fa-angle-up collapse legend--arrow--up"></i>
-                    <i class="fa-solid fa-angle-down legend--arrow--down"></i>
-                </div>
+                    <div class="fill__title">
+                            <legend class="fill__legend">
+                                    <i class="fa-regular fa-keyboard fill__legend--icon"></i> Rellena
+                            </legend>
+                            <i class="fa-solid fa-angle-up collapse legend--arrow--up"></i>
+                            <i class="fa-solid fa-angle-down legend--arrow--down"></i>
+                    </div>
 
-                <div class="js-fill collapse">
-                    <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name">
-                            Nombre
-                            completo<span class="asterisc">*</span></span>
-                        <input class="fill__input fill__input--name js-input" type="text" name="name" id="name"
-                            placeholder="Ej: Sally Jill" required />
-                    </label>
-                    <label for="job-position" class="fill__label fill__label--jobposition"><span
-                            class="fill__label__text--jobposition">Puesto<span class="asterisc">*</span></span>
-                        <input class="fill__input fill__input--jobposition js-input" type="text" name="job"
-                            id="job-position" placeholder="Ej: Front-end unicorn" required />
-                    </label>
-                    <label for="profile-image" class="fill__label fill__label--profileimage">
-                        <div class="fill__label__container">
-                            <label class="fill__label__container--button" for="img-selector">Añadir imagen</label>
-                            <input type="file" name="photo" id="img-selector"
-                                class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse"
-                                required>
+                    <div class="js-fill collapse">
+                            <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name"> Nombre
+                                            completo<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--name js-input js_input_name" type="text" name="name"
+                                            id="name" placeholder="Ej: Sally Jill" required />
+                            </label>
+                            <label for="job-position" class="fill__label fill__label--jobposition"><span
+                                            class="fill__label__text--jobposition">Puesto<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--jobposition js-input js_input_job" type="text" name="job"
+                                            id="job-position" placeholder="Ej: Front-end unicorn" required />
+                            </label>
+                            <label for="profile-image" class="fill__label fill__label--profileimage">
+                                    <div class="fill__label__container">
+                                            <label class="fill__label__container--button" for="img-selector">Añadir imagen</label>
+                                            <input type="file" name="photo" id="img-selector"
+                                                    class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse js_input_photo"
+                                                    required>
 
-                            <div class="fill__label__container--box js__profile-preview"></div>
-                        </div>
+                                            <div class="fill__label__container--box js__profile-preview"></div>
+                                    </div>
 
 
-                    </label>
-                    <label for="emailaddress" class="fill__label fill__label--email"><span
-                            class="fill__label__text--email">Email<span class="asterisc">*</span></span>
-                        <input class="fill__input fill__input--email js-input" type="email" name="emailaddress"
-                            id="emailaddress" placeholder="Ej: sally.hill@gmail.com" required />
-                    </label>
-                    <label for="telefono" class="fill__label fill__input--telefono">
-                        <span class="fill__label__text--telefono">Teléfono</span>
-                        <input class="fill__input fill__input--telefono js-input" type="text" type="tel" name="phone"
-                            id="phone" placeholder="Ej: 555-55-55-55" />
-                    </label>
-                    <label for="linkedin" class="fill__label fill__label--linkedin">
-                        <span class="fill__label__text--linkedin">Linkedin<span class="asterisc">*</span></span>
-                        <input class="fill__input fill__input--linkedin js-input" type="text" name="linkedin"
-                            id="linkedin" placeholder="Ej: linkedin.com/in/sally-hill" required />
-                    </label>
-                    <label for="github" class="fill__label fill__label--github"><span
-                            class="fill__label__text--github">Github<span class="asterisc">*</span></span>
-                        <input class="fill__input fill__input--github js-input" type="text" name="github" id="github"
-                            placeholder="Ej: @sally-hill" required />
-                    </label>
-                </div>
-                <div class="border_button"></div>
+                            </label>
+                            <label for="emailaddress" class="fill__label fill__label--email"><span
+                                            class="fill__label__text--email">Email<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--email js-input js_input_email" type="email" name="email"
+                                            id="email" placeholder="Ej: sally.hill@gmail.com" required />
+                            </label>
+                            <label for="telefono" class="fill__label fill__input--telefono">
+                                    <span class="fill__label__text--telefono">Teléfono</span>
+                                    <input class="fill__input fill__input--telefono js-input js_input_phone" type="text" type="tel"
+                                            name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
+                            </label>
+                            <label for="linkedin" class="fill__label fill__label--linkedin">
+                                    <span class="fill__label__text--linkedin">Linkedin<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--linkedin js-input js_input_linkedin" type="text"
+                                            name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/in/sally-hill" required />
+                            </label>
+                            <label for="github" class="fill__label fill__label--github"><span
+                                            class="fill__label__text--github">Github<span class="asterisc">*</span></span>
+                                    <input class="fill__input fill__input--github js-input js_input_github" type="text"
+                                            name="github" id="github" placeholder="Ej: @sally-hill" required />
+                            </label>
+                    </div>
+                    <div class="border_button"></div>
             </fieldset>
             <fieldset class="form">
                 <div class="form__share">
@@ -140,28 +134,25 @@
                 <div class="js-form collapse">
                     <label for="create-card" class="form__label">
                         <div class="form__box">
-                            <i class="fa-regular fa-address-card form__box--icon"></i> <input type="submit"
-                                name="create-card" id="create-card" value="Crear tarjeta" class="form__box--button" />
+                            <i class="fa-regular fa-address-card form__box--icon"></i>
+                            <button class="form__box--button js_button_submit">Crear tarjeta</button>
+                            <!-- <input type="submit" name="create-card"
+                                id="create-card" value="Crear tarjeta" class="form__box--button js_button_submit" /> -->
                         </div>
                     </label>
-                    <div class="CardContainer">
-                        <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
-                        <h4 class="CardContainer__url">URL de tarjeta creada</h4>
-                        <div class="container">
-                            <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input
-                                    type="submit" name="compartir-twitter" id="compartir-twitter"
-                                    value="Compartir en twitter" class="container__btn"></label>
+                    <div class="CardContainer collapse js_card_container">
+                        <h3 class="CardContainer__card js_card_title"></h3>
+                        <h4 class="CardContainer__url js_url"></h4>
+                        <div class="container__twitter collapse">
+                            <label for="compartir-twitter"><i class="fa-brands fa-twitter container__twitter__icon"></i><a href=""
+                                    class="js-twitter"><input type="submit" name="compartir-twitter" id="compartir-twitter"
+                                        value="Compartir en twitter" class="container__twitter__btn"></a></label>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="border_button"></div>
-                <!-- <label for="create-card" class="form__label">
-                    <div class="form__box">
-                        <i class="fa-regular fa-address-card form__box--icon"></i> <input type="submit" name="create-card"
-                            id="create-card" value="Crear tarjeta" class="form__box--button" />
-                    </div>
-                </label> -->
-                <!-- Hemos sacado el Comparte de Twitter del CreateHTML para que nos funcione flex en mediaquerie-->
 
 
             </fieldset>
@@ -169,8 +160,7 @@
     </main>
     <footer class="footer">
         <p class="footer__text">Awesome profile-cards @2022</p>
-        <div class="footer__box"><img src="./assets/images/logo-adalab.png" alt="Adalab" class="footer__box--logo">
-        </div>
+        <div class="footer__box"><img src="./assets/images/logo-adalab.png" alt="Adalab" class="footer__box--logo"></div>
     </footer>
     <script src="./assets/js/main.js"></script>
 </body>
