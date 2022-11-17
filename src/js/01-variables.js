@@ -25,4 +25,19 @@ const allInput = document.querySelectorAll('.js-input');
 //constantes para la sección comparte
 const submitBtn = document.querySelector('.js_button_submit');
 const cardContainer = document.querySelector('.js_card_container');
-const urlCreateCard = document.querySelector('.js_card_container');
+const urlCreateCard = document.querySelector('.js_url');
+const boxSubmitBtn = document.querySelector('.form__box'); //div boton crear tarjeta
+const cardShareTitle = document.querySelector('.js_card_title');
+
+// compartir en twitter
+const twitterShare = document.querySelector('.js-twitter');
+const containerTwitter = document.querySelector('.container__twitter');
+
+//inputs del form para escribir con el localStorage
+const inputName = document.querySelector('.js_input_name');
+const inputJob = document.querySelector('.js_input_job');
+const inputPhoto = document.querySelector('.js_input_photo');
+const inputEmail = document.querySelector('.js_input_email');
+const inputPhone = document.querySelector('.js_input_phone');
+const inputLinkedin = document.querySelector('.js_input_linkedin');
+const inputGithub = document.querySelector('.js_input_github');

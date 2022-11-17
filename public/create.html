@@ -78,19 +78,19 @@
                     <div class="js-fill collapse">
                             <label for="name" class="fill__label fill__label--name"><span class="fill__label__text--name"> Nombre
                                             completo<span class="asterisc">*</span></span>
-                                    <input class="fill__input fill__input--name js-input" type="text" name="name" id="name"
-                                            placeholder="Ej: Sally Jill" required />
+                                    <input class="fill__input fill__input--name js-input js_input_name" type="text" name="name"
+                                            id="name" placeholder="Ej: Sally Jill" required />
                             </label>
                             <label for="job-position" class="fill__label fill__label--jobposition"><span
                                             class="fill__label__text--jobposition">Puesto<span class="asterisc">*</span></span>
-                                    <input class="fill__input fill__input--jobposition js-input" type="text" name="job"
+                                    <input class="fill__input fill__input--jobposition js-input js_input_job" type="text" name="job"
                                             id="job-position" placeholder="Ej: Front-end unicorn" required />
                             </label>
                             <label for="profile-image" class="fill__label fill__label--profileimage">
                                     <div class="fill__label__container">
                                             <label class="fill__label__container--button" for="img-selector">Añadir imagen</label>
                                             <input type="file" name="photo" id="img-selector"
-                                                    class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse"
+                                                    class="action__hiddenField js__profile-upload-btn fill__label__text--profileimage collapse js_input_photo"
                                                     required>
 
                                             <div class="fill__label__container--box js__profile-preview"></div>
@@ -100,23 +100,23 @@
                             </label>
                             <label for="emailaddress" class="fill__label fill__label--email"><span
                                             class="fill__label__text--email">Email<span class="asterisc">*</span></span>
-                                    <input class="fill__input fill__input--email js-input" type="email" name="email"
+                                    <input class="fill__input fill__input--email js-input js_input_email" type="email" name="email"
                                             id="email" placeholder="Ej: sally.hill@gmail.com" required />
                             </label>
                             <label for="telefono" class="fill__label fill__input--telefono">
                                     <span class="fill__label__text--telefono">Teléfono</span>
-                                    <input class="fill__input fill__input--telefono js-input" type="text" type="tel"
-                                            name="telephone" id="telephone" placeholder="Ej: 555-55-55-55" />
+                                    <input class="fill__input fill__input--telefono js-input js_input_phone" type="text" type="tel"
+                                            name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
                             </label>
                             <label for="linkedin" class="fill__label fill__label--linkedin">
                                     <span class="fill__label__text--linkedin">Linkedin<span class="asterisc">*</span></span>
-                                    <input class="fill__input fill__input--linkedin js-input" type="text" name="linkedin"
-                                            id="linkedin" placeholder="Ej: linkedin.com/in/sally-hill" required />
+                                    <input class="fill__input fill__input--linkedin js-input js_input_linkedin" type="text"
+                                            name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/in/sally-hill" required />
                             </label>
                             <label for="github" class="fill__label fill__label--github"><span
                                             class="fill__label__text--github">Github<span class="asterisc">*</span></span>
-                                    <input class="fill__input fill__input--github js-input" type="text" name="github" id="github"
-                                            placeholder="Ej: @sally-hill" required />
+                                    <input class="fill__input fill__input--github js-input js_input_github" type="text"
+                                            name="github" id="github" placeholder="Ej: @sally-hill" required />
                             </label>
                     </div>
                     <div class="border_button"></div>
@@ -134,30 +134,25 @@
                 <div class="js-form collapse">
                     <label for="create-card" class="form__label">
                         <div class="form__box">
-                            <i class="fa-regular fa-address-card form__box--icon"></i> 
+                            <i class="fa-regular fa-address-card form__box--icon"></i>
                             <button class="form__box--button js_button_submit">Crear tarjeta</button>
                             <!-- <input type="submit" name="create-card"
                                 id="create-card" value="Crear tarjeta" class="form__box--button js_button_submit" /> -->
                         </div>
                     </label>
                     <div class="CardContainer collapse js_card_container">
-                        <h3 class="CardContainer__card">La tarjeta ha sido creada:</h3>
+                        <h3 class="CardContainer__card js_card_title"></h3>
                         <h4 class="CardContainer__url js_url"></h4>
-                        <div class="container">
-                            <label for="compartir-twitter"><i class="fa-brands fa-twitter container__icon"></i><input type="submit"
-                                    name="compartir-twitter" id="compartir-twitter" value="Compartir en twitter"
-                                    class="container__btn"></label>
+                        <div class="container__twitter collapse">
+                            <label for="compartir-twitter"><i class="fa-brands fa-twitter container__twitter__icon"></i><input
+                                    type="submit" name="compartir-twitter" id="compartir-twitter" value="Compartir en twitter"
+                                    class="container__twitter__btn"></label>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="border_button"></div>
-                <!-- <label for="create-card" class="form__label">
-                    <div class="form__box">
-                        <i class="fa-regular fa-address-card form__box--icon"></i> <input type="submit" name="create-card"
-                            id="create-card" value="Crear tarjeta" class="form__box--button" />
-                    </div>
-                </label> -->
-                <!-- Hemos sacado el Comparte de Twitter del CreateHTML para que nos funcione flex en mediaquerie-->
 
 
             </fieldset>

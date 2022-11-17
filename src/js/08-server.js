@@ -1,8 +1,7 @@
 'use strict';
 
- function handleCreateCard(event){
+function handleCreateCard(event) {
   event.preventDefault();
-  console.log('holis');
   fetch('https://awesome-profile-cards.herokuapp.com/card', {
     method: 'POST',
     body: JSON.stringify(data),
@@ -16,11 +15,19 @@
       console.log(responseJson);
       if (responseJson.success) {
         cardContainer.classList.remove('collapse');
-        urlCreateCard.innerHTML = `${responseJson.cardURL}`;
+        cardShareTitle.innerHTML = 'La tarjeta ha sido creada:';
+        urlCreateCard.innerHTML = responseJson.cardURL;
+        containerTwitter.classList.remove('collapse');
       } else {
         cardContainer.classList.remove('collapse');
         urlCreateCard.innerHTML = `No has rellenado todos los campos`;
       }
+      markSuccessBtn();
     });
-};
+}
 submitBtn.addEventListener('click', handleCreateCard);
+
+function markSuccessBtn() {
+  submitBtn.classList.add('successBtn');
+  boxSubmitBtn.classList.add('successBtn');
+}

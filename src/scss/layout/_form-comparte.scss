@@ -3,19 +3,22 @@
   padding-right: rem(20);
   text-align: center;
   // Hemos quitado la línea que se ve encima del footer
- // border-bottom: rem(1) solid $color-lineFormulary; 
-   
+  // border-bottom: rem(1) solid $color-lineFormulary; 
+
   &__share {
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(30);
   }
+
   &__legend {
     @include form-title;
+
     &--icon {
       @include icons;
-    }   
+    }
   }
+
   &__box {
     background-color: $color-orange;
     border-radius: rem(12);
@@ -23,6 +26,7 @@
     display: inline-flex;
     align-self: center;
     margin-bottom: rem(30);
+
     &--button {
       background-color: $color-orange;
       font-family: $font-Open;
@@ -31,6 +35,7 @@
       border: none;
       margin-left: rem(5);
     }
+
     &--icon {
       color: $color-whireOriginal;
     }
@@ -39,4 +44,31 @@
 
 .border_button {
   @include border_button
+}
+
+.successBtn {
+  background-color: $color-BackButton;
+}
+
+.container__twitter {
+  background-color: $color-azure;
+  border-radius: rem(3);
+  padding: rem(3) rem(9) rem(6) rem(10.5);
+  margin: 0 auto;
+  margin-top: rem(10);
+  box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
+  margin-bottom: rem(30);
+
+  &__btn {
+    font-family: $font-Open;
+    font-size: rem(14);
+    color: $color-whireOriginal;
+    border: none;
+    background-color: $color-azure;
+    margin-left: rem(5);
+  }
+
+  &__icon {
+    color: $color-whireOriginal;
+  }
 }

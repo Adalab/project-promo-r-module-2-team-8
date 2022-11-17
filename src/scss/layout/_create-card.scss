@@ -13,32 +13,12 @@
     margin: 0 auto;
     gap: rem(20);
   }
+
   &__url {
     font-family: $font-Open;
     font-size: rem(12);
     font-weight: 600;
     color: $color-orange;
     margin: rem(5) auto;
-  }
-}
-
-.container {
-  background-color: $color-azure;
-  border-radius: rem(3);
-  padding: rem(3) rem(9) rem(6) rem(10.5);
-  margin: 0 auto;
-  margin-top: rem(10);
-  box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
-  margin-bottom: rem(30);
-  &__btn {
-    font-family: $font-Open;
-    font-size: rem(14);
-    color: $color-whireOriginal;
-    border: none;
-    background-color: $color-azure;
-    margin-left: rem(5);
-  }
-  &__icon {
-    color: $color-whireOriginal;
   }
 }
